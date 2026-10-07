@@ -28,6 +28,14 @@ h=h.replace('audio/STOMP-CREDITS.md',credits)
 body=(R/'03_header_rebuild_20261007/page-review-v7.html').read_text(encoding='utf-8')
 body=re.sub(r'<link[^>]+(?:fonts.googleapis.com|fonts.gstatic.com)[^>]*>','',body)
 body=body.replace('<link rel="stylesheet" href="dark-body.css">','<style>'+css((R/'03_header_rebuild_20261007/dark-body.css').read_text(encoding='utf-8'),R/'03_header_rebuild_20261007')+'</style>')
+# Keep large video files adjacent to the final HTML; embed images and posters.
+def final_asset(m):
+ attribute,relative=m[1],m[2]
+ p=(R/'03_header_rebuild_20261007'/relative).resolve()
+ if p.suffix.lower() in ('.mp4','.webm','.mov') or attribute=='href':
+  return attribute+'="'+p.relative_to(O).as_posix()+'"'
+ return attribute+'="'+data(p)+'"'
+body=re.sub(r'(src|poster|href)="(\.\./FINAL_AI_CONNECT/[^"\s]+)"',final_asset,body)
 body=body.replace('src="/reference-reset/motion/header.html?embed=1"','src="about:blank"')
 # srcdoc inherits the parent origin; source-window validation also works on file://.
 body=body.replace("if(event.origin!==location.origin||!frame||event.source!==frame.contentWindow)return;","if(!frame||event.source!==frame.contentWindow)return;")

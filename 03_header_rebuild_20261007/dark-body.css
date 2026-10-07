@@ -51,6 +51,14 @@ body{background:var(--bg);color:var(--ink)}
 /* The day cards provide the full mobile schedule without a wide duplicate timeline. */
 @media(max-width:719px){.gantt{display:none}.chap>.wrap,.mx-wrap,.daycard{min-width:0;max-width:100%}}
 
+/* Equal, compact schedule rows for both days; long titles can wrap. */
+#dayList{grid-auto-rows:minmax(54px,1fr);padding-block:8px;gap:0}
+#dayList li{grid-template-columns:96px minmax(0,1fr) auto;align-items:center;padding-block:12px;gap:12px}
+#dayList li>div{min-width:0}
+#dayList strong{line-height:1.5}
+#dayList time{white-space:nowrap}
+@media(max-width:560px){#dayList{grid-auto-rows:minmax(76px,1fr)}#dayList li{grid-template-columns:minmax(0,1fr) auto;gap:6px 12px}#dayList time{grid-column:1;grid-row:1}#dayList .aud{grid-column:2;grid-row:1;justify-self:end}#dayList li>div{grid-column:1/-1;grid-row:2}}
+
 /* Primary application link and restored homepage link. */
 .topnav .nav-cta .ghost{display:inline-flex;align-items:center}
 @media(max-width:719px){.topnav .wrap{gap:6px;padding-inline:10px}.topnav .nav-cta{gap:5px}.topnav .nav-cta .btn{font-size:11px;padding:9px 8px}.topnav .brand{font-size:11px;gap:5px}.topnav .brand small{font-size:8px}}
@@ -66,4 +74,27 @@ body{background:var(--bg);color:var(--ink)}
 .event-next a{color:#ccff00;white-space:nowrap}
 .pv-media .booth-image-notice{position:absolute;z-index:2;left:0;right:0;bottom:0;margin:0;padding:14px 16px;background:rgba(14,8,23,.93);color:#fff;font-size:13px;line-height:1.65}
 #space .mapbox{grid-template-columns:minmax(0,1fr);max-width:1000px;margin-inline:auto}
+.space-film{max-width:1000px;margin:0 auto 32px;border:1px solid var(--hair);border-radius:12px;overflow:hidden;background:var(--surface)}
+.space-film-video{display:block;width:100%;height:auto;aspect-ratio:21/9;object-fit:contain;background:#08060c}
+.space-film-caption{display:flex;align-items:center;justify-content:space-between;gap:20px;padding:18px 20px}
+.space-film-title{font-size:15px;font-weight:800;line-height:1.5;color:var(--head)}
+.space-film-note{margin-top:4px;font-size:12px;line-height:1.65;color:var(--muted)}
+.space-film-sound{display:inline-flex;flex:none;align-items:center;justify-content:center;gap:8px;min-height:44px;padding:10px 15px;border:1px solid var(--hair-2);border-radius:99px;background:var(--chip);color:var(--head);font:600 13px/1.3 var(--f-body);cursor:pointer}
+.space-film-sound:hover{background:var(--acc-tint);border-color:var(--acc-ink)}
+.space-film-sound[hidden]{display:none}.space-film-sound svg{fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.space-film-sound .sound-waves,.space-film-sound[aria-pressed="true"] .sound-muted{display:none}.space-film-sound[aria-pressed="true"] .sound-waves{display:initial}
+@media(max-width:599px){.space-film{margin-bottom:24px}.space-film-caption{align-items:flex-start;flex-direction:column;gap:12px;padding:16px}.space-film-title{font-size:14px}.space-film-sound{align-self:flex-start}}
 @media(max-width:719px){.event-look{margin-top:30px;padding-top:24px}.event-look-heading{grid-template-columns:1fr;gap:15px}.event-look-heading>p{font-size:14px}.event-next{align-items:flex-start;flex-direction:column;gap:12px}.pv-media .booth-image-notice{font-size:12px;padding:10px 12px}}
+
+/* Keep official fascia logos visible in the booth image crop. */
+.pv-media img{object-position:center top}.pv-media>.tag{display:none}
+
+/* Activity images bridge the schedule and exhibition sections. */
+.activity-scenes{padding:48px 0 60px;background:#100b19;border-block:1px solid var(--hair)}
+.activity-heading{margin-bottom:26px}.activity-heading h2{font-size:clamp(26px,3vw,38px);line-height:1.3;margin:9px 0 13px}.activity-heading>p:last-child{color:var(--muted);font-size:15px}
+.activity-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:20px}
+.activity-card{min-width:0;background:var(--surface);border:1px solid var(--hair);border-radius:12px;overflow:hidden}
+.activity-card img{display:block;width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.activity-card>div{padding:20px}.activity-card h3{font-size:18px;line-height:1.45;color:var(--head);margin-bottom:8px}.activity-card p{font-size:14px;line-height:1.75;color:var(--muted)}
+@media(max-width:999px){.activity-grid{grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}}
+@media(max-width:599px){.activity-scenes{padding:36px 0 40px}.activity-grid{grid-template-columns:1fr}.activity-card>div{padding:18px}.activity-heading>p:last-child{font-size:14px}}

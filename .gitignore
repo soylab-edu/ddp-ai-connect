@@ -14,3 +14,38 @@ __pycache__/
 Thumbs.db
 .hyperframes/
 .thumbnails/
+
+# Local experiments, review captures and preserved backups.
+/03_AI_CONNECT_header_1920x1080.mp4
+/FINAL_AI_CONNECT/AI_CONNECT_FOLLOW_THROUGH*.mp4
+/FINAL_AI_CONNECT/AI_CONNECT_MIX_FOLLOW_THROUGH_TEST.mp4
+/FINAL_AI_CONNECT/FOLLOW_THROUGH_REVIEW.html
+/FINAL_AI_CONNECT/WEBDI_FINAL_REVIEW.md
+/FINAL_AI_CONNECT/*-proof.png
+/FINAL_AI_CONNECT/apply_copy_review_v2.py
+/FINAL_AI_CONNECT/apply_webdi_review.py
+/FINAL_AI_CONNECT/backups/
+/FINAL_AI_CONNECT/follow-through-test/
+/FINAL_AI_CONNECT/follow-through-v2/
+/FINAL_AI_CONNECT/inspect-page.txt
+/FINAL_AI_CONNECT/motion-analysis/
+/FINAL_AI_CONNECT/motion-preservation-hashes.json
+/FINAL_AI_CONNECT/space-video-*.json
+/FINAL_AI_CONNECT/webdi-backup-before-v2/
+/FINAL_AI_CONNECT/webdi-validation/
+/FINAL_AI_CONNECT/event-previews/02-nano-banana-signup.*
+
+# Approved brand image and space-video delivery only.
+/FINAL_AI_CONNECT/brand-corrections/*
+!/FINAL_AI_CONNECT/brand-corrections/event-previews/
+/FINAL_AI_CONNECT/brand-corrections/event-previews/*
+!/FINAL_AI_CONNECT/brand-corrections/event-previews/02-bbanana-signup.png
+/FINAL_AI_CONNECT/room-360-loop/*
+!/FINAL_AI_CONNECT/room-360-loop/SEEDANCE25_ORIGINAL_1080P.mp4
+!/FINAL_AI_CONNECT/room-360-loop/SEEDANCE25_POSTER.jpg
+!/FINAL_AI_CONNECT/room-360-loop/PREVIEW.html
+!/FINAL_AI_CONNECT/room-360-loop/README.md
+
+# New raw venue photos and brand references stay local by default.
+# Files already tracked in this directory remain in the repository.
+/행사내부/
