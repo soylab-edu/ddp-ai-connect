@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>SOYLAB — A / 사람과 사람 사이</title><style>@font-face{font-family:Poster;src:url('assets/Pretendard-Regular.woff2') format('woff2');font-weight:400;font-display:block}
+@font-face{font-family:Poster;src:url('assets/Pretendard-ExtraBold.woff2') format('woff2');font-weight:800;font-display:block}
+:root{color-scheme:light;--purple:#7A00EE;--paper:#F3F0E9;--ink:#17151A;--lime:#CCFF00}
+*{box-sizing:border-box}html,body{margin:0;width:100%;height:100%;font-family:Poster,sans-serif}body{background:var(--paper);color:var(--ink)}a{color:inherit}button{font:inherit}button,a{-webkit-tap-highlight-color:transparent}button:focus-visible,a:focus-visible{outline:3px solid currentColor;outline-offset:5px}h1,h2,p{margin:0}h1,h2,strong,b{font-weight:800}
+#root{--fg:#F3F0E9;position:relative;isolation:isolate;width:100%;height:100%;overflow:hidden;background:var(--purple);color:var(--fg);container-type:size}
+.live #root{height:100svh;min-height:820px;max-height:1080px}
+.brandline{position:absolute;z-index:20;left:48px;right:48px;top:30px;display:flex;justify-content:space-between;align-items:flex-start;border-bottom:1px solid currentColor;padding-bottom:20px}
+.event-name{font-size:21px;line-height:1.05;letter-spacing:-.05em;font-weight:800}.event-name span{display:block}.brand-name{text-align:right;font-size:31px;letter-spacing:-.075em;font-weight:800;line-height:.95}.brand-name span{display:block;margin-top:10px;font-size:12px;letter-spacing:0;font-weight:400}
+.edition{position:absolute;left:48px;top:114px;font-size:12px;letter-spacing:.09em;z-index:20}.edition span{padding-left:10px}.controls{position:absolute;top:108px;right:48px;z-index:30;display:flex;gap:16px;align-items:center}.controls button{color:inherit;background:none;border:0;border-bottom:1px solid currentColor;padding:4px 0;cursor:pointer;font-size:12px}.status{font-size:11px;min-width:35px;letter-spacing:.08em}
+.stage{position:absolute;inset:145px 48px 265px;pointer-events:none}.state{position:absolute;inset:0;opacity:0}.state-inner{position:absolute;inset:0}.sup{font-size:21px;letter-spacing:-.025em;line-height:1.35}.state .sub{position:absolute;bottom:8px;left:0;font-size:23px;line-height:1.45;letter-spacing:-.025em}.word{display:block;line-height:1.05;letter-spacing:-.085em;font-weight:800;white-space:nowrap}.glyph{display:inline-block}.pair{position:absolute;top:64px;left:0;right:0;display:flex;justify-content:space-between;align-items:center}.pair .word{font-size:18.5cqw}.between{position:absolute;left:0;right:0;top:50%;display:flex;justify-content:center;align-items:center;font-size:43px;font-weight:800;line-height:1;letter-spacing:-.08em}.small-ai{display:inline-block}.pair .small-ai{font-size:44px}.s1 .sup{position:absolute;top:12px;left:0}.s1 .bridge{position:absolute;left:42%;right:42%;height:4px;background:currentColor;top:54%}
+.s2 .space-word{position:absolute;inset:39px 0 0;display:flex;justify-content:center;align-items:flex-start;gap:15%;font-size:21.5cqw}.s2 .between{top:44%}.s2 .sup{position:absolute;left:0;top:7px}.s2 .sub{left:auto;right:0;text-align:right}
+.s3 .creative{position:absolute;top:60px;left:0;font-size:22cqw}.s3 .creative .g2{color:var(--lime)}.s3 .disciplines{position:absolute;right:0;bottom:75px;display:flex;gap:30px;font-size:34px;font-weight:800;letter-spacing:-.04em}.discipline{display:inline-block}.s3 .sub{font-size:21px}
+.s4 .together{position:absolute;inset:40px 0 0;display:flex;justify-content:center;font-size:23cqw}.s4 .accent-line{position:absolute;width:10%;height:8px;right:8%;bottom:94px;background:var(--lime)}.s4 .sub{left:auto;right:0;text-align:right}.s4 .sup{position:absolute;left:0;top:7px}
+.s5 .preline{position:absolute;left:0;top:4px;font-size:30px;line-height:1.2;letter-spacing:-.04em}.people-line{position:absolute;top:61px;left:0;right:0;display:flex;gap:24px;align-items:baseline;justify-content:space-between;line-height:1}.people-unit{display:flex;align-items:baseline;gap:13px;white-space:nowrap}.people-unit strong{font-size:17cqw;line-height:1.05;letter-spacing:-.075em;color:var(--purple)}.people-unit em{font-size:4.6cqw;line-height:1;font-weight:800;font-style:normal}.s5 .meet{position:absolute;right:0;bottom:6px;font-size:88px;line-height:1.06;letter-spacing:-.065em}.s5 .invitation{position:absolute;left:0;bottom:8px;font-size:21px;line-height:1.5;letter-spacing:-.03em;max-width:58%}
+.event-info{position:absolute;z-index:20;left:48px;right:48px;bottom:38px;min-height:185px;border-top:2px solid currentColor;padding-top:17px}.event-description{font-size:18px;letter-spacing:-.025em;line-height:1.45}.event-description .mobile-break{display:none}.info-grid{display:flex;align-items:baseline;justify-content:space-between;gap:22px;margin-top:18px}.date{font-size:46px;font-weight:800;letter-spacing:-.075em;line-height:1.15;white-space:nowrap}.venue{font-size:24px;letter-spacing:-.04em;white-space:nowrap}.actions{display:flex;gap:10px;align-items:center}.actions a{font-size:16px;text-decoration:none;font-weight:800;padding:13px 20px;line-height:1.2;border:1.5px solid currentColor;border-radius:999px;white-space:nowrap}.actions .primary{background:var(--fg);color:var(--button-ink,#7A00EE);border-color:var(--fg)}.actions a:hover{opacity:.8}.opening-hours{font-size:14px;line-height:1.4;margin-top:17px;letter-spacing:-.01em}.opening-hours span+span{padding-left:21px}.progress{position:absolute;left:0;right:0;bottom:0;height:4px;background:currentColor;transform-origin:left;opacity:.65}
+.below{max-width:1200px;margin:auto;padding:72px 30px;background:var(--paper);color:var(--ink)}.below section{scroll-margin-top:30px;border-top:1px solid #c4c0ca;padding:28px 0;margin-bottom:32px}.below h2{font-size:30px;letter-spacing:-.04em;margin-bottom:15px}.below p{font-size:17px;line-height:1.8;max-width:760px}.below .note{font-size:14px;color:#625b68;margin-top:10px}.below a{display:inline-block;margin-top:20px}.sr-only{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@media(min-width:701px) and (max-width:1100px){
+ .stage{bottom:290px}.event-info{min-height:225px}.info-grid{display:grid;grid-template-columns:1fr 1fr;row-gap:18px}.date{font-size:38px}.venue{font-size:20px;justify-self:end}.actions{grid-column:2;grid-row:2;justify-self:end}.actions a{font-size:14px;padding:11px 16px}.opening-hours{position:absolute;bottom:4px;left:0;font-size:12px;width:45%}.opening-hours span{display:block}.opening-hours span+span{padding-left:0}.s5 .meet{font-size:68px}.s5 .invitation{font-size:16px;max-width:51%}
+}
+@media(max-width:700px){
+ .live #root{height:100svh;min-height:844px;max-height:none}
+ .brandline{left:20px;right:20px;top:23px;padding-bottom:17px}.event-name{font-size:16px;line-height:1.08}.brand-name{font-size:24px}.brand-name span{font-size:10px;line-height:1.3;margin-top:6px;max-width:115px}
+ .edition{left:20px;top:98px;font-size:9px;letter-spacing:.025em}.edition span{padding-left:4px}.controls{right:20px;top:93px;gap:12px}.controls button{font-size:10px;padding:3px 0}.status{display:none}
+ .stage{inset:132px 20px 302px}.sup{font-size:16px}.state .sub{font-size:15px;bottom:0;line-height:1.45}.s1 .sup{top:0}.pair{top:32px;bottom:46px;display:flex;flex-direction:column;justify-content:space-between;align-items:flex-start}.pair .word{font-size:33cqw;line-height:1.03}.pair .person-b{align-self:flex-end}.s1 .between{top:45%;font-size:22px}.s1 .bridge{top:48%;left:45%;right:45%;height:2px}.s1 .sub{max-width:300px}
+ .s2 .space-word{inset:67px 0 0;gap:8%;font-size:40cqw}.s2 .between{top:44%;font-size:30px}.s2 .sub{left:0;right:auto;text-align:left;font-size:18px;bottom:33px;max-width:250px}.s2 .sup{top:0}
+ .s3 .creative{top:50px;font-size:41cqw}.s3 .disciplines{left:0;right:auto;bottom:81px;gap:12px;font-size:27px;white-space:nowrap}.s3 .sub{font-size:15px;max-width:285px;bottom:20px}
+ .s4 .together{inset:68px 0 0;font-size:41cqw}.s4 .accent-line{right:8%;bottom:88px;width:20%;height:5px}.s4 .sub{font-size:18px;max-width:270px;bottom:17px}.s4 .sup{top:0}
+ .s5 .preline{top:0;font-size:19px}.people-line{top:30px;bottom:42px;display:flex;flex-direction:column;justify-content:flex-start;gap:0}.people-unit{gap:8px}.people-unit strong{font-size:32cqw;line-height:1.1}.people-unit em{font-size:10cqw}.people-unit:nth-child(2){align-self:flex-end}.s5 .meet{right:0;bottom:0;font-size:52px}.s5 .invitation{left:0;bottom:0;font-size:12px;line-height:1.55;max-width:45%}
+ .event-info{left:20px;right:20px;bottom:22px;min-height:260px;padding-top:14px;border-top-width:1.5px}.event-description{font-size:13px;line-height:1.65;max-width:330px;letter-spacing:-.02em}.event-description .mobile-break{display:block}.info-grid{margin-top:15px;display:flex;flex-direction:column;align-items:flex-start;gap:6px}.date{font-size:31px;line-height:1.08;letter-spacing:-.065em}.venue{font-size:17px;line-height:1.4;letter-spacing:-.035em}.opening-hours{position:absolute;left:0;right:0;bottom:59px;font-size:12.5px;line-height:1.5;margin:0}.opening-hours span{display:block}.opening-hours span+span{padding-left:0}.actions{position:absolute;left:0;right:0;bottom:0;gap:10px}.actions a{font-size:14px;padding:12.5px 17px;text-align:center;flex:1}.progress{height:3px}.below{padding:45px 22px}.below h2{font-size:26px}.below p{font-size:15px}
+}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.actions a{transition:none}}
+
+
+</style><script src="assets/gsap.min.js"></script></head><body class="render"><div data-hf-id="hf-s0yz" id="root" data-composition-id="type-poster" data-width="768" data-height="900" data-duration="14">
+  <h1 data-hf-id="hf-6gkj" class="sr-only" data-layout-ignore="">NEXT K-CORE AI CONNECT — AI를 사이에 두고, 사람과 사람이 만나다.</h1>
+  <div data-hf-id="hf-lyh1" class="brandline"><div data-hf-id="hf-4ev8" class="event-name"><span data-hf-id="hf-abq7">NEXT K-CORE</span><span data-hf-id="hf-dj45">AI CONNECT</span></div><div data-hf-id="hf-3hxh" class="brand-name">SOYLAB<span data-hf-id="hf-zwwl">사람을 모으고, 함께 만드는 자리</span></div></div>
+  <p data-hf-id="hf-pb9u" class="edition">DECEMBER 2026 <span data-hf-id="hf-ccbe">SEOUL / DDP</span></p>
+  <div data-hf-id="hf-fycu" class="controls"><span data-hf-id="hf-mzbc" class="status" aria-hidden="true">14 SEC</span><button data-hf-id="hf-9eza" type="button" id="pause">일시정지</button><button data-hf-id="hf-z5j1" type="button" id="replay">다시보기 ↻</button></div>
+  <div data-hf-id="hf-o0eq" class="stage" id="type-stage" aria-hidden="true">
+    <div data-hf-id="hf-0q1p" class="state s1"><div data-hf-id="hf-3d2w" class="state-inner"><p data-hf-id="hf-pkn9" class="sup">결국, 중요한 건</p><div data-hf-id="hf-vt1w" class="pair"><span data-hf-id="hf-e0ru" class="word person-a"><span data-hf-id="hf-vpqr" class="glyph">사</span><span data-hf-id="hf-sk8j" class="glyph">람</span></span><span data-hf-id="hf-a2nt" class="word person-b"><span data-hf-id="hf-qcmr" class="glyph">사</span><span data-hf-id="hf-5byr" class="glyph">람</span></span></div><i data-hf-id="hf-de3f" class="bridge"></i><div data-hf-id="hf-giag" class="between"><span data-hf-id="hf-qyr7" class="small-ai">AI</span></div><p data-hf-id="hf-4rul" class="sub">기술보다 먼저, 사람과 사람.</p></div></div>
+    <div data-hf-id="hf-4o5q" class="state s2"><div data-hf-id="hf-g6hc" class="state-inner"><p data-hf-id="hf-roxg" class="sup">AI도 결국, 사람과 사람</p><div data-hf-id="hf-jzrh" class="space-word word"><span data-hf-id="hf-jmg7" class="glyph space-a">사</span><span data-hf-id="hf-q082" class="glyph space-b">이</span></div><div data-hf-id="hf-hj3k" class="between"><span data-hf-id="hf-l58z" class="small-ai">AI</span></div><p data-hf-id="hf-rzqd" class="sub">그 사이에서<br data-hf-id="hf-b9xa" class="editorial-break">가능성이 열린다.</p></div></div>
+    <div data-hf-id="hf-8m9r" class="state s3"><div data-hf-id="hf-ezk9" class="state-inner"><p data-hf-id="hf-iwbb" class="sup">연결이 만드는</p><div data-hf-id="hf-p5mh" class="creative word"><span data-hf-id="hf-50se" class="glyph g1">창</span><span data-hf-id="hf-scx3" class="glyph g2">작</span></div><div data-hf-id="hf-alk5" class="disciplines"><span data-hf-id="hf-2733" class="discipline">게임</span><span data-hf-id="hf-im1j" class="discipline">예술</span><span data-hf-id="hf-isd9" class="discipline">이야기</span></div><p data-hf-id="hf-luoz" class="sub">전시 · 상영 · 강의 · 교류로 만나는 AI 창작</p></div></div>
+    <div data-hf-id="hf-ckds" class="state s4"><div data-hf-id="hf-fdva" class="state-inner"><p data-hf-id="hf-q2r7" class="sup">사람을 모으고, 사람들과</p><div data-hf-id="hf-9ejq" class="together word"><span data-hf-id="hf-73r3" class="glyph join-a">함</span><span data-hf-id="hf-zbpu" class="glyph join-b">께</span></div><i data-hf-id="hf-ogt9" class="accent-line"></i><p data-hf-id="hf-2i4t" class="sub">그 자리를 만드는 이름,<br data-hf-id="hf-628y" class="editorial-break">SOYLAB.</p></div></div>
+    <div data-hf-id="hf-dc1l" class="state s5"><div data-hf-id="hf-e6y7" class="state-inner"><p data-hf-id="hf-11rq" class="preline">AI를 사이에 두고,</p><div data-hf-id="hf-22cw" class="people-line"><span data-hf-id="hf-odgr" class="people-unit"><strong data-hf-id="hf-84u2">사람</strong><em data-hf-id="hf-nk1d">과</em></span><span data-hf-id="hf-k3yj" class="people-unit"><strong data-hf-id="hf-yihq">사람</strong><em data-hf-id="hf-xa1l">이</em></span></div><strong data-hf-id="hf-3f0t" class="meet">만나다.</strong><p data-hf-id="hf-pd9i" class="invitation">사람의 연결이 더 중요하기에.<br data-hf-id="hf-6gjz" class="editorial-break">우리는 사람들을 모으고 함께하려 합니다.</p></div></div>
+  </div>
+  <div data-hf-id="hf-uh2h" class="event-info"><p data-hf-id="hf-afss" class="event-description">게임·예술·이야기, <span data-hf-id="hf-odpl" class="mobile-break"></span>전시·상영·강의·교류를 잇는 AI 창작 통합 행사</p><div data-hf-id="hf-bpcl" class="info-grid"><p data-hf-id="hf-njcx" class="date">2026.12.09–10</p><p data-hf-id="hf-sauv" class="venue">DDP 디자인랩 3층 디자인홀</p><nav data-hf-id="hf-kqmn" class="actions" aria-label="행사 안내"><a data-hf-id="hf-t7gu" class="primary" href="#program">프로그램 보기 ↗</a><a data-hf-id="hf-tqkh" href="#guide">참여 안내 ↓</a></nav></div><p data-hf-id="hf-t3yn" class="opening-hours"><span data-hf-id="hf-2zdw">일반 관람 · 12/9 10:30–19:40</span><span data-hf-id="hf-6fl1">12/10 15:00–19:40</span></p></div>
+  <div data-hf-id="hf-po2k" class="progress" aria-hidden="true"></div>
+</div>
+<script>(function(){
+  'use strict';
+  const root=document.getElementById('root');
+  const mobile=Number(root.dataset.width)<701 || window.innerWidth<701;
+  const tl=gsap.timeline({paused:true});
+  const purple='#7A00EE', paper='#F3F0E9', ink='#17151A';
+  let previousState=null;
+  const switchTo=(state,time,bg,fg,buttonInk)=>{
+    if(previousState)tl.set(previousState,{opacity:0},time);
+    tl.set(state,{opacity:1},time);
+    tl.set(root,{backgroundColor:bg,'--fg':fg,'--button-ink':buttonInk},time);
+    previousState=state;
+  };
+  switchTo('.s1',0,purple,paper,purple);
+  tl.fromTo('.s1 .person-a .glyph',{yPercent:28,rotation:-7,opacity:0},{yPercent:0,rotation:0,opacity:1,duration:.66,stagger:.09,ease:'back.out(1.5)'},0);
+  tl.fromTo('.s1 .person-b .glyph',{yPercent:-28,rotation:7,opacity:0},{yPercent:0,rotation:0,opacity:1,duration:.66,stagger:.09,ease:'back.out(1.5)'},.18);
+  tl.fromTo('.s1 .bridge',{scaleX:0},{scaleX:1,duration:.48,ease:'power3.inOut'},.55);
+  tl.to('.s1 .bridge',{scaleX:0,duration:.25,ease:'power2.in'},1.03);
+  tl.fromTo('.s1 .small-ai',{scale:0,rotation:-90},{scale:1,rotation:0,duration:.55,ease:'back.out(1.5)'},1.05);
+  tl.to('.s1 .person-a',{xPercent:mobile?-8:-5,duration:.5,ease:'power3.inOut'},1.7);
+  tl.to('.s1 .person-b',{xPercent:mobile?8:5,duration:.5,ease:'power3.inOut'},1.7);
+  tl.to('.s1 .person-a',{xPercent:-35,opacity:0,duration:.3,ease:'power3.in'},2.3);
+  tl.to('.s1 .person-b',{xPercent:35,opacity:0,duration:.3,ease:'power3.in'},2.3);
+  switchTo('.s2',2.6,paper,ink,paper);
+  tl.fromTo('.s2 .space-a',{xPercent:40,rotation:8},{xPercent:0,rotation:0,duration:.65,ease:'power4.out'},2.6);
+  tl.fromTo('.s2 .space-b',{xPercent:-40,rotation:-8},{xPercent:0,rotation:0,duration:.65,ease:'power4.out'},2.6);
+  tl.fromTo('.s2 .small-ai',{scale:.1,opacity:0},{scale:1,opacity:1,duration:.4,ease:'back.out(1.5)'},2.96);
+  tl.fromTo('.s2 .sub',{y:30,opacity:0},{y:0,opacity:1,duration:.48,ease:'power3.out'},3.28);
+  tl.to('.s2 .space-a',{xPercent:-8,duration:.4,ease:'power2.inOut'},4.15);
+  tl.to('.s2 .space-b',{xPercent:8,duration:.4,ease:'power2.inOut'},4.15);
+  tl.to('.s2 .state-inner',{yPercent:-15,opacity:0,duration:.26,ease:'power3.in'},4.94);
+  switchTo('.s3',5.2,ink,paper,ink);
+  tl.fromTo('.s3 .g1',{xPercent:-65,skewX:-14,opacity:0},{xPercent:0,skewX:0,opacity:1,duration:.5,ease:'power4.out'},5.2);
+  tl.fromTo('.s3 .g2',{yPercent:24,scaleY:1.1,opacity:0},{yPercent:0,scaleY:1,opacity:1,duration:.55,ease:'back.out(1.15)'},5.32);
+  tl.fromTo('.s3 .discipline',{x:80,opacity:0},{x:0,opacity:1,duration:.45,stagger:.16,ease:'power3.out'},5.85);
+  tl.fromTo('.s3 .sub',{opacity:0},{opacity:1,duration:.4},6.35);
+  tl.to('.s3 .creative',{scale:.88,transformOrigin:'left center',duration:.35,ease:'power2.inOut'},7.1);
+  tl.to('.s3 .state-inner',{xPercent:15,opacity:0,duration:.26,ease:'power3.in'},7.54);
+  switchTo('.s4',7.8,purple,paper,purple);
+  tl.fromTo('.s4 .join-a',{xPercent:-55,yPercent:-15,rotation:-10,opacity:0},{xPercent:0,yPercent:0,rotation:0,opacity:1,duration:.65,ease:'back.out(1.35)'},7.8);
+  tl.fromTo('.s4 .join-b',{xPercent:55,yPercent:15,rotation:10,opacity:0},{xPercent:0,yPercent:0,rotation:0,opacity:1,duration:.65,ease:'back.out(1.35)'},7.9);
+  tl.fromTo('.s4 .accent-line',{scaleX:0},{scaleX:1,duration:.35,ease:'power3.out'},8.55);
+  tl.fromTo('.s4 .sub',{y:20,opacity:0},{y:0,opacity:1,duration:.48,ease:'power3.out'},8.75);
+  tl.to('.s4 .together',{scale:.98,duration:.22,ease:'power2.inOut'},9.6);
+  tl.to('.s4 .state-inner',{scale:1.07,opacity:0,duration:.25,ease:'power3.in'},10.15);
+  switchTo('.s5',10.4,paper,ink,paper);
+  tl.fromTo('.s5 .preline',{y:20,opacity:0},{y:0,opacity:1,duration:.42,ease:'power3.out'},10.4);
+  tl.fromTo('.s5 .people-unit:first-child',{x:mobile?-30:-60,y:16,opacity:0},{x:0,y:0,opacity:1,duration:.65,ease:'power4.out'},10.55);
+  tl.fromTo('.s5 .people-unit:last-child',{x:mobile?30:60,y:-16,opacity:0},{x:0,y:0,opacity:1,duration:.65,ease:'power4.out'},10.69);
+  tl.fromTo('.s5 .meet',{y:30,opacity:0},{y:0,opacity:1,duration:.6,ease:'power4.out'},10.95);
+  tl.fromTo('.s5 .invitation',{y:15,opacity:0},{y:0,opacity:1,duration:.6,ease:'power3.out'},11.2);
+  tl.fromTo('.progress',{scaleX:0},{scaleX:1,duration:14,ease:'none'},0);
+  window.__timelines=window.__timelines||{};
+  window.__timelines['type-poster']=tl;
+  window.posterTimeline=tl;
+})();
+</script></body></html>

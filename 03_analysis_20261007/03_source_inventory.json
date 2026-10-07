@@ -1,0 +1,206 @@
+{
+  "source": "D:\\DDP\\03_NEXT_KCORE_AI_CONNECT_v11.html",
+  "sha256": "7e6b316f0f22a628fb7849914ae549340d1eded3058ecc52102a87f0ef8e7e27",
+  "bytes": 5401121,
+  "lines": 1449,
+  "static_html_nodes": 651,
+  "static_tags": {
+    "html": 1,
+    "head": 1,
+    "meta": 3,
+    "title": 1,
+    "link": 4,
+    "script": 3,
+    "style": 1,
+    "body": 1,
+    "nav": 1,
+    "div": 179,
+    "a": 18,
+    "svg": 8,
+    "circle": 4,
+    "rect": 9,
+    "path": 6,
+    "span": 93,
+    "small": 8,
+    "b": 36,
+    "button": 31,
+    "i": 37,
+    "ol": 2,
+    "header": 8,
+    "img": 24,
+    "p": 56,
+    "h1": 1,
+    "em": 3,
+    "br": 3,
+    "output": 1,
+    "filter": 1,
+    "feturbulence": 1,
+    "animate": 1,
+    "fedisplacementmap": 1,
+    "section": 8,
+    "h2": 8,
+    "h3": 10,
+    "main": 1,
+    "strong": 3,
+    "article": 8,
+    "h4": 9,
+    "h5": 9,
+    "ul": 2,
+    "table": 1,
+    "thead": 1,
+    "tr": 1,
+    "th": 5,
+    "tbody": 1,
+    "text": 13,
+    "g": 6,
+    "details": 5,
+    "summary": 5,
+    "footer": 1,
+    "dl": 1,
+    "dt": 3,
+    "dd": 3
+  },
+  "css_bytes": 53022,
+  "js_bytes_with_embeds": 2372430,
+  "js_bytes_without_embeds": 50753,
+  "embedded_image_occurrences": 51,
+  "unique_embedded_images": 33,
+  "image_uri_base64_chars": 5262448,
+  "keyframes": [
+    "floaty",
+    "join",
+    "burst",
+    "corePulse",
+    "spray",
+    "rowL",
+    "rowR",
+    "spinX",
+    "cycIn",
+    "moreIn",
+    "hush",
+    "bobDot",
+    "pop",
+    "flow"
+  ],
+  "sections": [
+    {
+      "id": "top",
+      "line": 736,
+      "title": "AI를 사이에 두고,사람이 만나다",
+      "headings": [],
+      "image_tags": 12,
+      "buttons": 11
+    },
+    {
+      "id": "entry",
+      "line": 776,
+      "title": "어떤 이유로 오시나요?",
+      "headings": [
+        {
+          "text": "기업 참여",
+          "line": 779
+        },
+        {
+          "text": "전시·상영 관람",
+          "line": 780
+        },
+        {
+          "text": "무료강의",
+          "line": 781
+        }
+      ],
+      "image_tags": 3,
+      "buttons": 3
+    },
+    {
+      "id": "intro",
+      "line": 788,
+      "title": "AI를 사이에 두고, 사람이 만나다",
+      "headings": [
+        {
+          "text": "네 가지 주제PEOPLE–AI–PEOPLE → GAME · ART · STORY",
+          "line": 802
+        },
+        {
+          "text": "THE CLASS 한눈에넥스트K코어 · AI 크리에이터 THE CLASS",
+          "line": 810
+        },
+        {
+          "text": "부제 후보 5누르면 페이지 전체의 부제가 바뀝니다 · CONFIG.subtitle",
+          "line": 833
+        }
+      ],
+      "image_tags": 4,
+      "buttons": 0
+    },
+    {
+      "id": "program",
+      "line": 838,
+      "title": "날짜별 프로그램",
+      "headings": [],
+      "image_tags": 0,
+      "buttons": 2
+    },
+    {
+      "id": "partners",
+      "line": 861,
+      "title": "기업 참여 제안",
+      "headings": [
+        {
+          "text": "참여하면 이렇게 됩니다기업을 고르면 시나리오가 바뀝니다",
+          "line": 875
+        },
+        {
+          "text": "기업별 추천 참여 방식● 대표 프로그램 · ◐ 함께 운영 · ○ 협의 후 구성 · 행을 누르면 시나리오로 이동",
+          "line": 893
+        }
+      ],
+      "image_tags": 1,
+      "buttons": 0
+    },
+    {
+      "id": "works",
+      "line": 898,
+      "title": "전시·상영 작품",
+      "headings": [],
+      "image_tags": 0,
+      "buttons": 7
+    },
+    {
+      "id": "lectures",
+      "line": 909,
+      "title": "무료강의",
+      "headings": [],
+      "image_tags": 0,
+      "buttons": 0
+    },
+    {
+      "id": "space",
+      "line": 916,
+      "title": "공간 안내",
+      "headings": [],
+      "image_tags": 1,
+      "buttons": 0
+    },
+    {
+      "id": "guide",
+      "line": 942,
+      "title": "참여 안내",
+      "headings": [
+        {
+          "text": "자주 묻는 질문FAQ",
+          "line": 957
+        },
+        {
+          "text": "AI를 사이에 두고, 사람이 만나다",
+          "line": 965
+        }
+      ],
+      "image_tags": 0,
+      "buttons": 4
+    }
+  ],
+  "cover_scene_count": 6,
+  "duplicate_ids": {},
+  "missing_static_anchor_targets": []
+}

@@ -1,0 +1,9 @@
+@font-face{font-family:CWaveKR;src:url('assets/IBMKR-SemiBold.woff2') format('woff2');font-style:normal;font-weight:600;font-display:block}
+@font-face{font-family:CWaveLatin;src:url('assets/Outfit.ttf') format('truetype');font-style:normal;font-weight:100 900;font-display:block}
+.c-wave{position:absolute;inset:0;overflow:clip;pointer-events:none;contain:layout paint;isolation:isolate;background:#111;opacity:0;color:#f5f5f5;font-family:CWaveKR,sans-serif;font-weight:600;-webkit-font-smoothing:antialiased}
+.c-wave-row{position:absolute;top:0;left:0;display:flex;width:max-content;white-space:nowrap;font-size:var(--cw-font,36px);line-height:1.35;letter-spacing:-.02em;transform-origin:0 0;will-change:transform,opacity}
+.c-wave-cycle{display:flex;align-items:center;flex-shrink:0}
+.c-wave-word{display:inline-flex;align-items:center;flex-shrink:0;margin-right:1.1em;white-space:nowrap;color:var(--cw-color)}
+.c-wave-word.cw-latin{font-family:CWaveLatin,CWaveKR,sans-serif;font-weight:600;letter-spacing:.01em}
+.c-wave-letter{display:block;flex-shrink:0;transform-origin:50% 70%;will-change:transform;color:inherit}
+.c-wave-word.cw-outline .c-wave-letter{color:transparent;-webkit-text-stroke:var(--cw-stroke,.9px) #f5f5f5;paint-order:stroke fill}

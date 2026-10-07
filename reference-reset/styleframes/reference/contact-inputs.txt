@@ -1,0 +1,8 @@
+file 'D:/DDP/reference-reset/styleframes/reference/ref-01-intro.png'
+file 'D:/DDP/reference-reset/styleframes/reference/ref-02-month.png'
+file 'D:/DDP/reference-reset/styleframes/reference/ref-03-message.png'
+file 'D:/DDP/reference-reset/styleframes/reference/ref-04-pattern.png'
+file 'D:/DDP/reference-reset/styleframes/reference/ref-05-dots.png'
+file 'D:/DDP/reference-reset/styleframes/reference/ref-06-bold-type.png'
+file 'D:/DDP/reference-reset/styleframes/reference/ref-07-ribbon.png'
+file 'D:/DDP/reference-reset/styleframes/reference/ref-08-final-poster.png'

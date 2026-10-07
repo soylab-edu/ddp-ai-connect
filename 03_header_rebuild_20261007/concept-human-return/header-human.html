@@ -1,0 +1,80 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="color-scheme" content="dark"><title>SOYLAB — HUMAN / AI / HUMAN</title><style>@font-face{font-family:HumanKR;src:url('assets/IBMPlexSansKR-SemiBold-full.woff2') format('woff2');font-style:normal;font-weight:600;font-display:block}
+@font-face{font-family:HumanEnglish;src:url('assets/Outfit.ttf') format('truetype');font-style:normal;font-weight:100 900;font-display:block}
+*{box-sizing:border-box}
+html,body{margin:0;width:100%;height:100%;background:#090909;color:#F5F5F1}
+body{font-family:HumanKR,sans-serif;font-weight:600;-webkit-font-smoothing:antialiased}
+button,a{-webkit-tap-highlight-color:transparent}
+button{font:inherit}
+button,a{touch-action:manipulation}
+#stage{position:relative;width:100%;height:100%;overflow:hidden;container-type:inline-size;background:#090909;--paper:#F5F5F1;--muted:#B7B7B1;--lime:#CCFF00;--purple:#7A00EE}
+.live #stage{height:40vw;min-height:0}
+#human-poster-root{position:relative;width:100%;height:100%;overflow:hidden}
+.scene-mount{position:absolute;inset:0;pointer-events:none}
+.scene-mount canvas{display:block;width:100%;height:100%}
+.poster-layout{position:relative;z-index:2;width:100%;height:100%;display:grid;grid-template-rows:auto 1fr auto;padding:2.45cqw 3.75cqw 2.45cqw;pointer-events:none}
+.topline{display:flex;align-items:flex-start;justify-content:space-between;gap:40px}
+.slogan{margin:0;font-size:clamp(20px,1.72cqw,28px);font-weight:600;letter-spacing:-.055em;line-height:1.48}
+.slogan span{display:block}
+.event-facts{text-align:right;padding-top:2px}
+.date{display:block;font-family:HumanEnglish,sans-serif;font-size:clamp(20px,1.72cqw,28px);font-weight:500;letter-spacing:.01em;line-height:1.18;font-variant-numeric:tabular-nums}
+.venue{margin:9px 0 0;font-size:clamp(13px,1.02cqw,17px);font-weight:600;letter-spacing:-.04em;line-height:1.5;color:var(--paper)}
+.bottomline{display:grid;grid-template-columns:1fr auto 1fr;align-items:end;gap:28px;min-width:0}
+.identity{display:flex;flex-direction:column;gap:9px;align-items:flex-start}
+.brand{font-family:HumanEnglish,sans-serif;font-size:clamp(22px,1.8cqw,30px);line-height:1;font-weight:500;letter-spacing:-.035em}
+.event-name{font-family:HumanEnglish,sans-serif;font-size:clamp(12px,.82cqw,14px);font-weight:500;letter-spacing:.07em;line-height:1.3;color:var(--muted)}
+.player-controls{display:flex;gap:8px;align-items:center;justify-content:center;pointer-events:auto}
+.control{display:grid;place-items:center;width:44px;height:44px;border:1px solid #494946;border-radius:50%;padding:0;color:var(--paper);background:#090909;cursor:pointer}
+.control svg{width:16px;height:16px;fill:none;stroke:currentColor;stroke-width:1.6;stroke-linecap:round;stroke-linejoin:round}
+.control .play-icon{display:block}
+.control .pause-icon{display:none}
+.control.is-playing .play-icon{display:none}
+.control.is-playing .pause-icon{display:block}
+.actions{display:flex;justify-content:flex-end;gap:22px;pointer-events:auto;min-width:0}
+.actions a{display:inline-flex;align-items:center;gap:18px;min-height:44px;color:var(--paper);text-decoration:none;border-bottom:1px solid #777771;font-size:clamp(13px,.95cqw,16px);line-height:1.2;letter-spacing:-.025em;white-space:nowrap}
+.actions .arrow{font-family:HumanEnglish,sans-serif;font-size:19px;font-weight:400;color:var(--lime)}
+a:focus-visible,button:focus-visible{outline:2px solid var(--lime);outline-offset:5px}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip-path:inset(50%);white-space:nowrap;border:0}
+.render .player-controls{opacity:0;pointer-events:none}
+@media(max-width:700px){
+  .live #stage{height:720px}
+  .poster-layout{padding:28px 25px 27px}
+  .topline{flex-direction:column;align-items:flex-start;gap:21px}
+  .slogan{font-size:21px;line-height:1.45;letter-spacing:-.058em}
+  .event-facts{text-align:left;padding:0}
+  .date{font-size:21px;line-height:1.15;letter-spacing:.01em}
+  .venue{margin-top:7px;font-size:13px;letter-spacing:-.04em;line-height:1.4}
+  .bottomline{grid-template-columns:1fr auto;gap:20px 12px;align-items:center}
+  .identity{gap:8px;grid-column:1;grid-row:1}
+  .brand{font-size:25px}
+  .event-name{font-size:10px;letter-spacing:.055em}
+  .player-controls{grid-column:2;grid-row:1;gap:7px}
+  .control{width:44px;height:44px}
+  .actions{grid-column:1/-1;grid-row:2;justify-content:space-between;gap:22px}
+  .actions a{font-size:14px;min-height:42px;gap:16px;flex:1;justify-content:space-between}
+}
+@media(max-width:350px){.poster-layout{padding-left:20px;padding-right:20px}.slogan{font-size:19px}.event-name{font-size:9px}.player-controls{gap:4px}.control{width:40px;height:40px}}
+</style><script src="assets/gsap.min.js"></script><script src="assets/three.min.js"></script></head><body class="live"><main id="stage"><section id="human-poster-root"><div id="human-scene" class="scene-mount" aria-hidden="true" data-layout-ignore></div><div class="poster-layout"><header class="topline"><h1 class="slogan"><span>AI를 사이에 두고,</span><span>사람과 사람이 만나다.</span></h1><div class="event-facts"><time class="date" datetime="2026-12-09">2026.12.09–10</time><p class="venue">DDP 디자인랩 3층 디자인홀</p></div></header><div aria-hidden="true"></div><footer class="bottomline"><div class="identity"><span class="brand">SOYLAB</span><span class="event-name">NEXT K-CORE AI CONNECT</span></div><div class="player-controls"><button class="control" id="human-pause" type="button" aria-label="모션 재생" aria-pressed="true" title="모션 재생"><svg class="pause-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M7 4v12M13 4v12"/></svg><svg class="play-icon" viewBox="0 0 20 20" aria-hidden="true"><path d="M6 3.5 15 10 6 16.5Z"/></svg></button><button class="control" id="human-replay" type="button" aria-label="모션 처음부터 다시보기" title="모션 처음부터 다시보기"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M4.2 7A6 6 0 1 1 4 12M4 3v4h4"/></svg></button></div><nav class="actions" aria-label="행사 안내"><a href="#program" target="_parent">프로그램 보기<span class="arrow" aria-hidden="true">↗</span></a><a href="#guide" target="_parent">참여 안내<span class="arrow" aria-hidden="true">↗</span></a></nav></footer></div><p class="sr-only" data-layout-ignore>하나의 구슬이 HUMAN에서 출발해 AI를 경유하고 HUMAN으로 돌아옵니다.</p></section></main><script src="scene.js"></script><script>(function(){
+  'use strict';
+  const stage=document.getElementById('human-poster-root');
+  const mount=document.getElementById('human-scene');
+  const scene=window.HumanScene;
+  if(!scene)throw new Error('HumanScene must load before the composition master.');
+  scene.init(mount);
+  const clock={t:0};
+  const tl=gsap.timeline({paused:true,onUpdate:function(){scene.seek(clock.t);}});
+  tl.addLabel('human',0);
+  tl.addLabel('depart',1.5);
+  tl.addLabel('ai',3.9);
+  tl.addLabel('return',6);
+  tl.addLabel('resolve',6.4);
+  tl.to(clock,{t:9,duration:9,ease:'none'},0);
+  window.__timelines=window.__timelines||{};
+  window.__timelines['human-poster']=tl;
+  window.humanTimeline=tl;
+  function resize(){const rect=stage.getBoundingClientRect();scene.resize(rect.width,rect.height);scene.seek(clock.t);}
+  resize();
+  new ResizeObserver(resize).observe(stage);
+  tl.seek(0);
+  scene.seek(0);
+})();
+</script><script src="player.js"></script></body></html>

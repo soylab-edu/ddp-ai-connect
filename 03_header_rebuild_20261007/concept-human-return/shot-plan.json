@@ -1,0 +1,270 @@
+{
+  "category": "kinetic-type",
+  "duration_s": 9,
+  "fps": 30,
+  "canvas": {
+    "w": 1600,
+    "h": 640,
+    "aspect": "5:2"
+  },
+  "style": "A refined black event poster centered on thin, softly shaded three-dimensional monoline HUMAN rails. Rounded corners, modest depth, a fixed camera and ample negative space. A smaller AI is a waypoint below the main word. A single identifiable marble makes a continuous return journey. Restrained SOYLAB color accents; no glow, chunky letters, edge-to-edge typography, people illustrations or stock artwork.",
+  "palette": [
+    "#111111",
+    "#F5F5F2",
+    "#7A00EE",
+    "#CCFF00",
+    "#DF0221"
+  ],
+  "font": "IBM Plex Sans KR",
+  "beats": [
+    45,
+    180,
+    192
+  ],
+  "export": "mp4",
+  "asset_needs": [],
+  "customize": {
+    "status": "retained-component-for-integration",
+    "approval_basis": [
+      "BRIEF.md",
+      "STORYBOARD.md",
+      "../HUMAN-AI-direction.md"
+    ],
+    "shot_brief": "From the first frame, a readable HUMAN sculpture and event information already form a complete poster. One small marble leaves its HUMAN origin, follows a continuous route through a smaller AI, and returns to the same origin without changing color. A single brief contour compression marks the return, then the composition settles into a clear final poster. The event message is that AI brings people back to people.",
+    "beat_unit": "frame",
+    "source_strategy": {
+      "search_required": false,
+      "stock_assets_used": false,
+      "generation_required": false,
+      "original_3d_code": {
+        "entry": "scene.js",
+        "owner": "motion_reference_search",
+        "status_at_plan": "implemented-awaiting-visual-review",
+        "description": "Project-local procedural letter rails, route, marble, shading and deterministic time-driven state; independently authored from the approved direction. Existing A/C/B scenes are not edited.",
+        "api": {
+          "namespace": "window.HumanScene",
+          "methods": [
+            "init",
+            "resize",
+            "seek",
+            "dispose"
+          ]
+        }
+      },
+      "available_local_assets": [
+        "assets/IBMPlexSansKR-Regular.ttf",
+        "assets/IBMPlexSansKR-SemiBold.ttf",
+        "assets/IBMPlexSansKR-OFL.txt",
+        "assets/Outfit.ttf",
+        "assets/Outfit-OFL.txt",
+        "assets/gsap.min.js"
+      ],
+      "catalog_review": {
+        "queries": [
+          "thin three-dimensional letter rails with one marble traveling from HUMAN through AI and returning",
+          "short concentric outline compression for a single landing emphasis with a fixed camera"
+        ],
+        "decision": "No optional block is named: this records the already approved original 3D implementation. Search results such as card rails, type reveals, camera-follow captions and ripple transitions are not substituted for the commissioned HUMAN return scene."
+      }
+    },
+    "type": {
+      "korean": "IBM Plex Sans KR",
+      "latin_and_numeric": "Outfit",
+      "human_and_ai": "Original monoline 3D geometry rather than a large filled font face",
+      "requirements": [
+        "Keep small Korean type crisp at DPR 2",
+        "Use the project-local font files and preserve their license files"
+      ]
+    },
+    "layout": {
+      "camera": "fixed",
+      "desktop": {
+        "canvas": {
+          "w": 1600,
+          "h": 640
+        },
+        "human_center": {
+          "x": 800,
+          "y": 310
+        },
+        "human_extent": {
+          "w": 720,
+          "h": 150
+        },
+        "ai_and_return_route_y": [
+          424,
+          465
+        ]
+      },
+      "mobile": {
+        "canvas": {
+          "w": 390,
+          "h": 720
+        },
+        "human_center": {
+          "x": 195,
+          "y": 370
+        },
+        "human_max_width": 340,
+        "ai_and_return_route_y": [
+          445,
+          500
+        ]
+      },
+      "persistent_information": [
+        "AI를 사이에 두고, 사람과 사람이 만나다.",
+        "NEXT K-CORE AI CONNECT",
+        "2026.12.09–10",
+        "DDP 디자인랩 3층 디자인홀",
+        "SOYLAB"
+      ],
+      "bounds_requirement": "HUMAN, AI, marble route, Korean information and final CTA must remain readable without collisions or clipping at both canvas sizes."
+    },
+    "marble": {
+      "count": 1,
+      "identity": "Keep the same visible color throughout departure, AI passage and return",
+      "route": "HUMAN origin -> smaller AI waypoint -> the same HUMAN origin",
+      "continuity": "No teleportation, duplication or unexplained disappearance",
+      "ai_passage_timing_status": "Confirmed from scene.js: aiRoute is active from 3.6 to 4.5 seconds; 3.9 seconds is the AI proof sample.",
+      "ai_passage_range_s": [
+        3.6,
+        4.5
+      ],
+      "ai_passage_sample_s": 3.9
+    },
+    "return_emphasis": {
+      "start_s": 6,
+      "end_s": 6.4,
+      "contour_layers": [
+        2,
+        3
+      ],
+      "action": "Compress surrounding contour depth toward HUMAN once, then remove the extra contours",
+      "constraints": [
+        "No full-screen giant text",
+        "No camera move",
+        "No repeated flashing",
+        "Restore the clean sculpture by 6.4 seconds"
+      ]
+    },
+    "delivery": {
+      "css_canvas": {
+        "w": 1600,
+        "h": 640
+      },
+      "video_pixels": {
+        "w": 3200,
+        "h": 1280
+      },
+      "dpr": 2,
+      "duration_s": 9,
+      "fps": 30,
+      "frames": 270,
+      "audio": "none",
+      "artifacts": [
+        "responsive web header",
+        "9-second MP4",
+        "poster",
+        "source files"
+      ],
+      "web_playback": [
+        "pause",
+        "replay",
+        "visibility handling",
+        "reduced motion",
+        "high-DPI support"
+      ],
+      "after_final_hold": "The live web version may continue subtle motion of the same small marble while keeping the poster stable; encoded duration remains exactly 9 seconds.",
+      "role": "Reusable HUMAN component. This nine-second plan is retained as a component reference, not the complete event-header delivery. The complete C sequence is to be assembled separately in concept-c-integrated."
+    },
+    "verification": {
+      "sample_times_s": [
+        0,
+        1.5,
+        3.9,
+        5.9,
+        6.2,
+        6.4,
+        8.9
+      ],
+      "ai_sample_note": "The 3.9-second proof sample falls within the confirmed scene.js AI passage range of 3.6–4.5 seconds.",
+      "checks": [
+        "First frame already reads as a refined poster with all five HUMAN letters",
+        "HUMAN stays the main subject; AI is smaller and reads as a waypoint",
+        "One same-color marble continuously returns to its original HUMAN point",
+        "Thin rounded 3D channels and restrained depth remain clear without glow",
+        "One 0.4-second return emphasis, followed by a clean stable composition",
+        "Crisp Korean, date and place on desktop and mobile",
+        "No clipping, overlaps, empty frames or unexpected camera movement",
+        "Inspect actual encoded frames and live playback, not source code alone"
+      ],
+      "independent_review": "Reviewer uses producer or ROOT samples and does not start a parallel render."
+    },
+    "ownership": {
+      "scene_and_geometry": "motion_reference_search",
+      "shell_typography_css_master_and_player": "review_01_html",
+      "shot_plan_and_independent_visual_review": "design_review",
+      "brief_storyboard_integration_export_and_delivery": "root"
+    },
+    "scope": "Only concept-human-return. Do not modify existing A/C/B or the site body."
+  },
+  "content": {
+    "scenes": [
+      {
+        "id": "human-origin",
+        "start": 0,
+        "end": 1.5,
+        "text": "HUMAN",
+        "emphasis_words": [
+          "HUMAN"
+        ],
+        "emotion": "Hook: calm, precise and human-centered",
+        "motion": "Show the complete HUMAN sculpture and persistent event information from frame zero. Hold the fixed camera and readable sculpture. One marble rests at its origin.",
+        "beats": []
+      },
+      {
+        "id": "human-ai-human-journey",
+        "start": 1.5,
+        "end": 6,
+        "text": "HUMAN → AI → HUMAN",
+        "emphasis_words": [
+          "HUMAN",
+          "AI"
+        ],
+        "emotion": "Build: clear continuity and anticipation",
+        "motion": "The same-color marble follows one continuous route from HUMAN through the smaller AI and back to the same HUMAN origin. Keep HUMAN geometry and the camera stable. The implemented AI passage is 3.6–4.5 seconds; use 3.9 seconds as the AI proof sample.",
+        "beats": [
+          45,
+          180
+        ]
+      },
+      {
+        "id": "human-return-emphasis",
+        "start": 6,
+        "end": 6.4,
+        "text": "HUMAN",
+        "emphasis_words": [
+          "HUMAN"
+        ],
+        "emotion": "Punch: a brief, controlled arrival",
+        "motion": "Mark the marble's return with one compression of two or three surrounding contour layers. Preserve the main word's size and negative space; restore the clean sculpture at 6.4 seconds.",
+        "beats": [
+          180,
+          192
+        ]
+      },
+      {
+        "id": "human-final-poster",
+        "start": 6.4,
+        "end": 9,
+        "text": "AI를 사이에 두고, 사람과 사람이 만나다.",
+        "emphasis_words": [
+          "사람"
+        ],
+        "emotion": "Resolve: composed, legible and complete",
+        "motion": "Hold the refined HUMAN poster, event name, date, venue and SOYLAB identity. The same marble may move subtly without competing with the information. Keep the composition ready for the web's final continuing state.",
+        "beats": []
+      }
+    ]
+  }
+}

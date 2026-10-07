@@ -1,0 +1,56 @@
+{
+  "source": "D:/DDP/헤더모션01파일샘플.mp4",
+  "sourceWidth": 2520,
+  "sourceHeight": 1080,
+  "sourceFps": 30,
+  "durationSeconds": 28.5,
+  "crop": {
+    "x": 134,
+    "y": 168,
+    "width": 2220,
+    "height": 912
+  },
+  "resized": false,
+  "frames": [
+    {
+      "Name": "ref-01-intro.png",
+      "Topic": "도입 방사형 심볼",
+      "Time": "0.8"
+    },
+    {
+      "Name": "ref-02-month.png",
+      "Topic": "큰 월 표기",
+      "Time": "2.3"
+    },
+    {
+      "Name": "ref-03-message.png",
+      "Topic": "메시지 장면",
+      "Time": "4.5"
+    },
+    {
+      "Name": "ref-04-pattern.png",
+      "Topic": "그래픽 패턴 전환",
+      "Time": "7.7"
+    },
+    {
+      "Name": "ref-05-dots.png",
+      "Topic": "작은 점 그래픽",
+      "Time": "8.9"
+    },
+    {
+      "Name": "ref-06-bold-type.png",
+      "Topic": "큰 단어 타이포",
+      "Time": "9.7"
+    },
+    {
+      "Name": "ref-07-ribbon.png",
+      "Topic": "가로 텍스트 리본",
+      "Time": "10.6"
+    },
+    {
+      "Name": "ref-08-final-poster.png",
+      "Topic": "최종 포스터",
+      "Time": "12.8"
+    }
+  ]
+}

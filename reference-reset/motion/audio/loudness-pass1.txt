@@ -1,0 +1,29 @@
+[aist#0:0/pcm_f32le @ 000001d57bdcba80] Guessed Channel Layout: stereo
+Input #0, wav, from 'audio/mix-premaster-16s.wav':
+  Duration: 00:00:16.00, bitrate: 3072 kb/s
+  Stream #0:0: Audio: pcm_f32le ([3][0][0][0] / 0x0003), 48000 Hz, stereo, flt, 3072 kb/s
+Stream mapping:
+  Stream #0:0 -> #0:0 (pcm_f32le (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'NUL':
+  Metadata:
+    encoder         : Lavf63.3.100
+  Stream #0:0: Audio: pcm_s16le, 192000 Hz, stereo, s16, 6144 kb/s
+    Metadata:
+      encoder         : Lavc63.3.100 pcm_s16le
+size=N/A time=00:00:10.30 bitrate=N/A speed=  20x elapsed=0:00:00.51    
+[Parsed_loudnorm_0 @ 000001d57bdd48c0] 
+{
+	"input_i" : "-17.13",
+	"input_tp" : "-3.20",
+	"input_lra" : "3.50",
+	"input_thresh" : "-27.22",
+	"output_i" : "-13.83",
+	"output_tp" : "-1.50",
+	"output_lra" : "1.70",
+	"output_thresh" : "-23.89",
+	"normalization_type" : "dynamic",
+	"target_offset" : "-0.17"
+}
+[out#0/null @ 000001d57be87300] video:0KiB audio:12000KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:00:16.00 bitrate=N/A speed=21.6x elapsed=0:00:00.73    

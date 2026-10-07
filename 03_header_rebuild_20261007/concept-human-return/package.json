@@ -1,0 +1,12 @@
+{
+  "name": "concept-human-return",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node create-index.mjs",
+    "dev": "npx --yes hyperframes@0.8.139 preview",
+    "check": "npx --yes hyperframes@0.8.139 check",
+    "render": "npx --yes hyperframes@0.8.139 render",
+    "publish": "npx --yes hyperframes@0.8.139 publish"
+  }
+}

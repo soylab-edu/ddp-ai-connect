@@ -1,0 +1,390 @@
+{
+  "ok": true,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "nested_structure_needs_subcomposition",
+        "severity": "warning",
+        "message": "<div id=\"motion-stage\"> is a timeline element that contains nested <section>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.",
+        "selector": "#motion-stage",
+        "dataAttributes": {},
+        "sourceFile": "D:\\DDP\\03_header_rebuild_20261007\\concept-a-weave\\mobile\\index.html",
+        "bbox": {
+          "x": 0,
+          "y": 0,
+          "width": 0,
+          "height": 0
+        },
+        "time": 0,
+        "fixHint": "Move <div id=\"motion-stage\"> and its contents into a sub-composition file and mount it with data-composition-src."
+      }
+    ],
+    "filesScanned": 1
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 7,
+    "findings": [
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 4.333,
+        "selector": "div.type-line.type-one",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": -2.5,
+          "top": 216.78,
+          "right": 261.91,
+          "bottom": 324.22,
+          "width": 264.41,
+          "height": 107.44
+        },
+        "containerSelector": "div.artboard",
+        "text": "사람과",
+        "fixHint": "Text is 264px x 107px inside 390px x 416px and overflows by up to 3px; widen the container to at least ~393px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 0,
+          "top": 164,
+          "right": 390,
+          "bottom": 580,
+          "width": 390,
+          "height": 416
+        },
+        "overflow": {
+          "left": 2.5
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -2.5,
+          "y": 216.78,
+          "width": 264.41,
+          "height": 107.44
+        },
+        "firstSeen": 4.333,
+        "lastSeen": 4.333,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 4.333,
+        "selector": "div.type-line.type-one",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": -2.5,
+          "top": 203,
+          "right": 261.91,
+          "bottom": 338,
+          "width": 264.41,
+          "height": 135
+        },
+        "containerSelector": "#root",
+        "text": "사람과",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 390,
+          "bottom": 844,
+          "width": 390,
+          "height": 844
+        },
+        "overflow": {
+          "left": 2.5
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -2.5,
+          "y": 203,
+          "width": 264.41,
+          "height": 135
+        },
+        "firstSeen": 4.333,
+        "lastSeen": 4.333,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "text_box_overflow",
+        "severity": "info",
+        "time": 4.333,
+        "selector": "div.type-line.type-two",
+        "message": "Text extends outside its nearest visual/container box.",
+        "rect": {
+          "left": 192.81,
+          "top": 408.34,
+          "right": 392.5,
+          "bottom": 515.78,
+          "width": 199.69,
+          "height": 107.44
+        },
+        "containerSelector": "div.artboard",
+        "text": "사람.",
+        "fixHint": "Text is 200px x 107px inside 390px x 416px and overflows by up to 3px; widen the container to at least ~393px, or allow wrapping with max-width/fitTextFontSize.",
+        "containerRect": {
+          "left": 0,
+          "top": 164,
+          "right": 390,
+          "bottom": 580,
+          "width": 390,
+          "height": 416
+        },
+        "overflow": {
+          "right": 2.5
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 192.81,
+          "y": 408.34,
+          "width": 199.69,
+          "height": 107.44
+        },
+        "firstSeen": 4.333,
+        "lastSeen": 4.333,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 4.333,
+        "selector": "div.type-line.type-two",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 192.81,
+          "top": 394.56,
+          "right": 392.5,
+          "bottom": 529.56,
+          "width": 199.69,
+          "height": 135
+        },
+        "containerSelector": "#root",
+        "text": "사람.",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 390,
+          "bottom": 844,
+          "width": 390,
+          "height": 844
+        },
+        "overflow": {
+          "right": 2.5
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 192.81,
+          "y": 394.56,
+          "width": 199.69,
+          "height": 135
+        },
+        "firstSeen": 4.333,
+        "lastSeen": 4.333,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 4.333,
+        "selector": "div.type-line.type-one",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -2.5,
+          "top": 217,
+          "right": 347.5,
+          "bottom": 324.44,
+          "width": 350,
+          "height": 107.44
+        },
+        "containerSelector": "div.artboard",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 164,
+          "right": 390,
+          "bottom": 580,
+          "width": 390,
+          "height": 416
+        },
+        "overflow": {
+          "left": 2.5
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -2.5,
+          "y": 217,
+          "width": 350,
+          "height": 107.44
+        },
+        "firstSeen": 4.333,
+        "lastSeen": 4.333,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 4.333,
+        "selector": "div.type-line.type-two",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": 42.5,
+          "top": 408.56,
+          "right": 392.5,
+          "bottom": 516,
+          "width": 350,
+          "height": 107.44
+        },
+        "containerSelector": "div.artboard",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 164,
+          "right": 390,
+          "bottom": 580,
+          "width": 390,
+          "height": 416
+        },
+        "overflow": {
+          "right": 2.5
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": 42.5,
+          "y": 408.56,
+          "width": 350,
+          "height": 107.44
+        },
+        "firstSeen": 4.333,
+        "lastSeen": 4.333,
+        "occurrences": 1,
+        "heldMs": 0
+      },
+      {
+        "code": "container_overflow",
+        "severity": "info",
+        "time": 7.8,
+        "selector": "div.type-flash.flash-one",
+        "message": "Element extends outside a clipping layout container.",
+        "rect": {
+          "left": -13.47,
+          "top": 149.63,
+          "right": 403.47,
+          "bottom": 594.37,
+          "width": 416.95,
+          "height": 444.75
+        },
+        "containerSelector": "div.artboard",
+        "fixHint": "Resize/reposition the child or container, or mark intentional overflow with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 164,
+          "right": 390,
+          "bottom": 580,
+          "width": 390,
+          "height": 416
+        },
+        "overflow": {
+          "left": 13.47,
+          "right": 13.47,
+          "top": 14.37,
+          "bottom": 14.37
+        },
+        "dataAttributes": {},
+        "sourceFile": "index.html",
+        "bbox": {
+          "x": -13.47,
+          "y": 149.63,
+          "width": 416.95,
+          "height": 444.75
+        },
+        "firstSeen": 7.8,
+        "lastSeen": 7.8,
+        "occurrences": 1,
+        "heldMs": 0
+      }
+    ],
+    "duration": 15.6,
+    "samples": [
+      0.867,
+      2.6,
+      4.333,
+      6.067,
+      7.8,
+      9.533,
+      11.267,
+      13,
+      14.733
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 7,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": true,
+    "samples": [
+      0.867,
+      4.333,
+      7.8,
+      11.267,
+      14.733
+    ],
+    "checked": 66,
+    "passed": 66
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": false,
+    "files": [],
+    "times": [],
+    "findingFiles": []
+  },
+  "_meta": {
+    "version": "0.8.139",
+    "latestVersion": "0.8.75",
+    "updateAvailable": false
+  }
+}

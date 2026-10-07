@@ -1,0 +1,45 @@
+Input #0, mov,mp4,m4a,3gp,3g2,mj2, from 'renders/AI-CONNECT-v7-beat-sync-3360x1440.mp4':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    encoder         : Lavf63.3.100
+    comment         : Music: Magnetic particles by lovescotch — https://freesound.org/people/lovescotch/sounds/724820/ — CC BY 4.0 — edited, tempo changed, SFX added.
+  Duration: 00:00:16.00, start: 0.000000, bitrate: 7345 kb/s
+  Stream #0:0[0x1](und): Video: h264 (High) (avc1 / 0x31637661), yuv420p(tv, bt709, progressive), 3360x1440 [SAR 1:1 DAR 7:3], 7017 kb/s, 30 fps, 30 tbr, 15360 tbn (default)
+    Metadata:
+      handler_name    : VideoHandler
+      encoder         : Lavc63.3.100 libx264
+  Stream #0:1[0x2](und): Audio: aac (LC) (mp4a / 0x6134706D), 48000 Hz, stereo, fltp, 319 kb/s (default)
+    Metadata:
+      handler_name    : SoundHandler
+Stream mapping:
+  Stream #0:1 -> #0:0 (aac (native) -> pcm_s16le (native))
+Press [q] to stop, [?] for help
+Output #0, null, to 'NUL':
+  Metadata:
+    major_brand     : isom
+    minor_version   : 512
+    compatible_brands: isomiso2avc1mp41
+    comment         : Music: Magnetic particles by lovescotch — https://freesound.org/people/lovescotch/sounds/724820/ — CC BY 4.0 — edited, tempo changed, SFX added.
+    encoder         : Lavf63.3.100
+  Stream #0:0(und): Audio: pcm_s16le, 192000 Hz, stereo, s16, 6144 kb/s (default)
+    Metadata:
+      encoder         : Lavc63.3.100 pcm_s16le
+      handler_name    : SoundHandler
+size=N/A time=00:00:10.10 bitrate=N/A speed=19.8x elapsed=0:00:00.51    
+[Parsed_loudnorm_0 @ 00000243d4d54840] 
+{
+	"input_i" : "-14.32",
+	"input_tp" : "-1.48",
+	"input_lra" : "3.70",
+	"input_thresh" : "-24.41",
+	"output_i" : "-14.18",
+	"output_tp" : "-1.51",
+	"output_lra" : "1.80",
+	"output_thresh" : "-24.23",
+	"normalization_type" : "dynamic",
+	"target_offset" : "0.18"
+}
+[out#0/null @ 00000243d4dae240] video:0KiB audio:12000KiB subtitle:0KiB other streams:0KiB global headers:0KiB muxing overhead: unknown
+size=N/A time=00:00:16.00 bitrate=N/A speed=22.4x elapsed=0:00:00.71    

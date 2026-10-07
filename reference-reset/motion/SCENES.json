@@ -1,0 +1,44 @@
+[
+  {
+    "number": "01",
+    "type": "dots",
+    "start": 0,
+    "duration": 1.4
+  },
+  {
+    "number": "02",
+    "type": "date",
+    "start": 1.4,
+    "duration": 1.3
+  },
+  {
+    "number": "03",
+    "type": "message",
+    "start": 2.7,
+    "duration": 2.5
+  },
+  {
+    "number": "04",
+    "type": "wave",
+    "start": 5.2,
+    "duration": 2.1
+  },
+  {
+    "number": "05",
+    "type": "logo",
+    "start": 7.3,
+    "duration": 1.5
+  },
+  {
+    "number": "06",
+    "type": "connect",
+    "start": 8.8,
+    "duration": 2.4
+  },
+  {
+    "number": "07",
+    "type": "final",
+    "start": 11.2,
+    "duration": 4.8
+  }
+]

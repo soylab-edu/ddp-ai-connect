@@ -1,0 +1,70 @@
+
+> check
+> npx --yes hyperframes@0.8.137 check
+
+◆  Checking hero-motion
+[hyperframes] browserGpuMode probe → hardware (WebGL renderer vendor="Google Inc. (NVIDIA)" renderer="ANGLE (NVIDIA, NVIDIA GeForce GTX 1650 (0x00001F82) Direct3D11 vs_5_0 ps_5_0, D3D11)")
+
+Lint
+  ⚠ duplicate_media_discovery_risk: Detected 2 matching img entries with the same source/start/duration.
+    D:\DDP\next-kcore\hero-motion\index.html [data-composition-id] t=0s
+    Fix: Avoid duplicated media nodes that can be discovered twice during compilation.
+  ⚠ nested_structure_needs_subcomposition: <div id="kinetic-stage"> is a timeline element that contains nested <div>. The timeline shows one row per top-level element, and the root composition is built only from sub-compositions.
+    D:\DDP\next-kcore\hero-motion\index.html #kinetic-stage t=0s
+    Fix: Move <div id="kinetic-stage"> and its contents into a sub-composition file and mount it with data-composition-src.
+  0 error(s), 2 warning(s), 0 info(s)
+
+Runtime
+  ◇ 0 errors, 0 warnings
+
+Layout
+  ⚠ t=20s rotation_pivot_drift img.asset.mask-people — Rotating element's bounding-box center drifts 674px across rotation — it is not spinning about its own center (check transformOrigin/svgOrigin).
+        Fix: The bounding-box center should stay fixed while the element spins; check its transformOrigin/svgOrigin so rotation pivots about the element's own center rather than a point in a coordinate space it was resized out of.
+  ⚠ t=23.5-23.75s (3 samples) content_overlap div.intro > p:nth-of-type(1) inside div.outro > p:nth-of-type(1) "NEXT K-CORE" — Two text blocks overlap and may render unreadable.
+        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.
+  ⚠ t=23.5-23.75s (3 samples) content_overlap div.intro > p:nth-of-type(1) inside div.title-line.final-ai "NEXT K-CORE" — Two text blocks overlap and may render unreadable.
+        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.
+  ⚠ t=23.5-23.75s (3 samples) content_overlap div.intro > div:nth-of-type(1) > span:nth-of-type(1) inside div.outro > p:nth-of-type(1) "A" — Two text blocks overlap and may render unreadable.
+        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.
+  ⚠ t=23.5-23.75s (3 samples) content_overlap div.intro > div:nth-of-type(1) > span:nth-of-type(1) inside div.title-line.final-ai "A" — Two text blocks overlap and may render unreadable.
+        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.
+  ⚠ t=23.5-23.75s (3 samples) content_overlap div.intro > div:nth-of-type(1) > span:nth-of-type(1) inside div.title-line.final-connect "A" — Two text blocks overlap and may render unreadable.
+        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.
+  ⚠ t=23.5-23.75s (3 samples) content_overlap div.intro > div:nth-of-type(1) > span:nth-of-type(2) inside div.outro > p:nth-of-type(1) "I" — Two text blocks overlap and may render unreadable.
+        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.
+  ⚠ t=23.5-23.75s (3 samples) content_overlap div.intro > div:nth-of-type(1) > span:nth-of-type(2) inside div.title-line.final-ai "I" — Two text blocks overlap and may render unreadable.
+        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.
+  ⚠ t=23.5-23.75s (3 samples) content_overlap div.intro > div:nth-of-type(1) > span:nth-of-type(2) inside div.title-line.final-connect "I" — Two text blocks overlap and may render unreadable.
+        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.
+  ⚠ t=23.5-23.75s (3 samples) content_overlap div.title-line.connect > span:nth-of-type(1) inside div.title-line.final-ai "C" — Two text blocks overlap and may render unreadable.
+        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.
+  ⚠ t=23.5-23.75s (3 samples) content_overlap div.title-line.connect > span:nth-of-type(1) inside div.title-line.final-connect "C" — Two text blocks overlap and may render unreadable.
+        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.
+  ⚠ t=23.5-23.75s (3 samples) content_overlap div.title-line.connect > span:nth-of-type(2) inside div.title-line.final-ai "O" — Two text blocks overlap and may render unreadable.
+        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.
+  ⚠ t=23.5-23.75s (3 samples) content_overlap div.title-line.connect > span:nth-of-type(2) inside div.title-line.final-connect "O" — Two text blocks overlap and may render unreadable.
+        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.
+  ⚠ t=23.5-23.75s (3 samples) content_overlap div.title-line.connect > span:nth-of-type(3) inside div.title-line.final-connect "N" — Two text blocks overlap and may render unreadable.
+        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.
+  ⚠ t=23.5-23.75s (3 samples) content_overlap div.title-line.connect > span:nth-of-type(4) inside div.title-line.final-connect "N" — Two text blocks overlap and may render unreadable.
+        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.
+  ⚠ t=23.5-23.75s (3 samples) content_overlap div.title-line.connect > span:nth-of-type(5) inside div.title-line.final-connect "E" — Two text blocks overlap and may render unreadable.
+        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.
+  ⚠ t=23.5-23.75s (3 samples) content_overlap div.title-line.connect > span:nth-of-type(6) inside div.title-line.final-connect "C" — Two text blocks overlap and may render unreadable.
+        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.
+  ⚠ t=23.5-23.75s (3 samples) content_overlap div.title-line.connect > span:nth-of-type(7) inside div.title-line.final-connect "T" — Two text blocks overlap and may render unreadable.
+        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.
+  ⚠ t=23.5-23.75s (3 samples) content_overlap div.title-line.connect > span:nth-of-type(8) inside div.title-line.final-connect "." — Two text blocks overlap and may render unreadable.
+        Fix: Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.
+  0 error(s), 19 warning(s), 0 info(s)
+
+Motion
+  ◇ 0 errors, 0 warnings
+
+Contrast
+  ◇ 38/38 text checks pass WCAG AA
+
+Snapshots
+  ◇ disabled
+
+◇  Check passed

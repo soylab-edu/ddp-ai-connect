@@ -1,0 +1,29 @@
+{
+  "uniqueIds": 60,
+  "duplicateIds": [],
+  "missingAnchorTargets": [],
+  "scriptSyntax": [
+    {
+      "script": 1,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "script": 2,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "script": 3,
+      "ok": true,
+      "error": ""
+    },
+    {
+      "script": 4,
+      "ok": true,
+      "error": ""
+    }
+  ],
+  "originalUnchanged": true,
+  "originalSha256": "7e6b316f0f22a628fb7849914ae549340d1eded3058ecc52102a87f0ef8e7e27"
+}

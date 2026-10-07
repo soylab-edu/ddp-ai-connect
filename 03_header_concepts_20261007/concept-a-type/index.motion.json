@@ -1,0 +1,12 @@
+{
+  "duration": 14,
+  "assertions": [
+    {"kind":"appearsBy","selector":".event-name","bySec":0},
+    {"kind":"appearsBy","selector":".event-info","bySec":0},
+    {"kind":"appearsBy","selector":".s1 .person-a","bySec":0.85},
+    {"kind":"appearsBy","selector":".s5 .meet","bySec":11.8},
+    {"kind":"staysInFrame","selector":".event-info"},
+    {"kind":"staysInFrame","selector":".actions"},
+    {"kind":"keepsMoving","withinSelector":".stage","maxStaticSec":2.5}
+  ]
+}

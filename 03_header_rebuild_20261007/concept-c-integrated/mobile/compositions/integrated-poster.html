@@ -1,0 +1,77 @@
+<!doctype html><html lang="ko"><head><meta charset="utf-8"></head><body><template><style>@font-face{font-family:CDisplay;src:url('assets/Outfit.ttf') format('truetype');font-weight:100 900;font-display:block}
+@font-face{font-family:CKorean;src:url('assets/IBMPlexSansKR-SemiBold-full.woff2') format('woff2');font-weight:600;font-display:block}
+*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;background:#111111;color:#F5F5F5;font-family:CKorean,sans-serif}#convergence{position:relative;width:100%;height:100%;overflow:clip;isolation:isolate;container-type:size;background:#111111}.clip,#world{position:absolute;inset:0;width:100%;height:100%;display:block}.corner{position:absolute;z-index:6;left:4.2%;top:5.2%;font:650 28px/1.05 CDisplay,sans-serif;letter-spacing:-.04em}.corner span{display:block}.eyebrow{position:absolute;right:4.2%;top:5.2%;z-index:6;font:600 13px/1.1 CDisplay,sans-serif;letter-spacing:.04em}.date-corner{position:absolute;z-index:6;left:4.2%;bottom:5.4%;font:600 19px/1.25 CDisplay,sans-serif;letter-spacing:-.015em}.date-corner small{font:500 11px/1.5 CKorean,sans-serif;display:block;margin-top:6px;letter-spacing:0}.brand-mark{position:absolute;inset:0;z-index:7;display:grid;place-items:center;opacity:0;pointer-events:none}.brand-mark img{display:block;width:42%;height:auto;max-height:86%;object-fit:contain}#typewave{position:absolute;inset:0;z-index:5;pointer-events:none}#poster{position:absolute;z-index:8;left:7%;right:7%;top:23%;opacity:0;visibility:hidden}#poster .label{font:650 20px/1 CDisplay,sans-serif;color:#CCFF00;margin:0 0 26px;letter-spacing:.035em}#poster h1{font-size:clamp(42px,5.8cqw,90px);line-height:1.2;letter-spacing:-.07em;font-weight:600;margin:0;max-width:1100px}#poster h1 span{display:block}#poster h1 strong{font-weight:600;color:#CCFF00}#poster .details{display:flex;justify-content:space-between;align-items:flex-end;margin-top:40px;gap:24px}#poster .date{font:650 45px/1 CDisplay,sans-serif;letter-spacing:-.03em}#poster .place{font-size:18px;margin-top:13px;font-weight:600}.actions{display:flex;gap:12px}.actions a{display:block;color:#F5F5F5;font:600 14px CKorean,sans-serif;text-decoration:none;padding:15px 21px;border:1px solid #F5F5F5}.actions a:first-child{color:#111111;background:#CCFF00;border-color:#CCFF00}.controls{position:absolute;z-index:20;right:4.2%;bottom:3.3%;display:flex;gap:20px;font-size:11px;align-items:center}.controls button{font:inherit;color:inherit;padding:4px 0;background:none;border:0;cursor:pointer}.controls button:disabled{opacity:.5;cursor:default}.controls span{opacity:.6}a:focus-visible,button:focus-visible{outline:3px solid #CCFF00;outline-offset:5px}body.render .controls{display:none}.sr-only{position:absolute;width:1px;height:1px;clip-path:inset(50%);overflow:hidden}
+@media(max-width:620px){.corner{font-size:21px;left:6%;top:4%}.eyebrow{right:6%;top:4%;font-size:10px}.date-corner{left:6%;bottom:6%;font-size:17px}.date-corner small{font-size:10px;max-width:230px}.brand-mark img{width:88%;max-height:65%}#poster{left:6%;right:6%;top:23%}#poster .label{font-size:13px;margin-bottom:20px}#poster h1{font-size:35px;line-height:1.25;letter-spacing:-.05em}#poster .details{display:block;margin-top:30px}#poster .date{font-size:33px}#poster .place{font-size:13px;margin-top:10px}.actions{margin-top:25px;gap:8px}.actions a{font-size:12px;padding:13px 17px}.controls{right:6%;left:6%;justify-content:flex-end;gap:17px;bottom:2.3%;font-size:10px}.controls span{margin-right:auto}}
+.intro-meta{position:absolute;inset:0;z-index:6;pointer-events:none}.intro-copy{position:absolute;left:4.5%;top:5.5%}.intro-kicker{font:600 13px/1 CDisplay,sans-serif;letter-spacing:.07em;margin-bottom:15px}.intro-slogan{font:500 34px/1.3 CKorean,sans-serif;letter-spacing:-.04em}.intro-slogan span{display:block}.intro-schedule{position:absolute;right:4.5%;top:5.5%;text-align:right}.intro-date{font:600 34px/1 CDisplay,sans-serif;letter-spacing:-.025em}.intro-place{font:500 16px/1.4 CKorean,sans-serif;margin-top:11px}.intro-line{will-change:transform,opacity}#poster{top:19%}#poster h1{font-size:clamp(42px,4.6cqw,74px)}#poster .label{font-size:16px;margin-bottom:20px}#poster .details{margin-top:26px}#poster .date{font-size:38px}#poster .place{font-size:16px}@media(max-width:620px){.intro-copy{left:6%;top:4%}.intro-kicker{font-size:10px;margin-bottom:12px}.intro-slogan{font-size:22px}.intro-schedule{right:6%;top:auto;bottom:7%;text-align:right}.intro-date{font-size:24px}.intro-place{font-size:11px;margin-top:7px}#poster{top:23%}#poster h1{font-size:34px}#poster .label{font-size:12px}#poster .details{margin-top:30px}#poster .date{font-size:30px}#poster .place{font-size:13px}}
+.intro-slogan,.intro-place{font-weight:600}.poster-description{font-size:14px;line-height:1.5;font-weight:500;letter-spacing:-.02em;margin:16px 0 0}@media(max-width:620px){.poster-description{font-size:11px;margin-top:14px}}
+body.web{height:auto;min-height:100%;overflow-x:clip}body.web #convergence{height:max(440px,40vw);min-height:440px}@media(max-width:620px){body.web #convergence{height:720px;min-height:720px}}
+body.web .controls{bottom:14.5%;font-size:10px;line-height:1.1;gap:16px}body.web .controls button{padding:2px 0}@media(max-width:620px){body.web .controls{bottom:16.5%;font-size:10px}}
+
+/* One responsive stage shared by the live header and the renderable component. */
+#integrated-root{position:relative;width:100%;height:100%;overflow:clip;isolation:isolate;container-type:size;background:#111111;color:#F5F5F5;font-family:CKorean,sans-serif;font-weight:600}
+#stage{position:absolute;inset:0}
+#human-scene{position:absolute;inset:0;z-index:3;pointer-events:none}
+#human-scene canvas{display:block;width:100%;height:100%}
+.intro-meta{z-index:9}
+.intro-kicker{font-size:clamp(9px,.8125cqw,13px);margin-bottom:.9375cqw}
+.intro-slogan{font-size:clamp(18px,2.125cqw,34px);font-weight:600}
+.intro-date{font-size:clamp(18px,2.125cqw,34px)}
+.intro-place{font-size:clamp(10px,1cqw,16px);margin-top:.6875cqw;font-weight:600}
+#poster .label{font-size:clamp(10px,1cqw,16px);margin-bottom:1.25cqw}
+#poster h1{font-size:clamp(26px,4.6cqw,74px)}
+#poster .poster-description{font-size:clamp(10px,.875cqw,14px);margin-top:1cqw;font-weight:600}
+#poster .details{margin-top:1.625cqw}
+#poster .date{font-size:clamp(24px,2.375cqw,38px)}
+#poster .place{font-size:clamp(11px,1cqw,16px);margin-top:.8125cqw}
+.actions a{font-size:clamp(11px,.875cqw,14px);padding:clamp(10px,.9375cqw,15px) clamp(12px,1.3125cqw,21px);min-height:40px}
+body.web #convergence{height:40vw;min-height:0}
+body.web .controls{left:50%;right:auto;transform:translateX(-50%);bottom:14.5%;min-height:44px;gap:15px;padding:0 12px;background:#111111;border-radius:24px;font-size:11px;white-space:nowrap}
+body.web .controls button{min-height:44px;padding:0 4px}
+@media(min-width:621px) and (max-width:1000px){.controls #motion-status{display:none}}
+@media(max-width:620px){
+  body.web #convergence{height:720px;min-height:720px}
+  .intro-kicker{font-size:10px;margin-bottom:12px}
+  .intro-slogan{font-size:22px}
+  .intro-schedule{left:6%;right:auto;top:125px;bottom:auto;text-align:left}
+  .intro-date{font-size:24px}
+  .intro-place{font-size:12px;margin-top:7px}
+  #poster .label{font-size:12px;margin-bottom:20px}
+  #poster h1{font-size:34px}
+  #poster .poster-description{font-size:11px;margin-top:14px}
+  #poster .details{margin-top:30px}
+  #poster .date{font-size:30px}
+  #poster .place{font-size:13px;margin-top:10px}
+  .actions a{font-size:12px;padding:13px 17px}
+  body.web .controls{left:6%;right:6%;transform:none;bottom:16.5%;gap:12px;padding:0 10px;font-size:10px;justify-content:flex-end}
+  body.web .controls span{margin-right:auto}
+}
+
+@font-face{font-family:CWaveKR;src:url('assets/IBMKR-SemiBold.woff2') format('woff2');font-style:normal;font-weight:600;font-display:block}
+@font-face{font-family:CWaveLatin;src:url('assets/Outfit.ttf') format('truetype');font-style:normal;font-weight:100 900;font-display:block}
+.c-wave{position:absolute;inset:0;overflow:clip;pointer-events:none;contain:layout paint;isolation:isolate;background:#111;opacity:0;color:#f5f5f5;font-family:CWaveKR,sans-serif;font-weight:600;-webkit-font-smoothing:antialiased}
+.c-wave-row{position:absolute;top:0;left:0;display:flex;width:max-content;white-space:nowrap;font-size:var(--cw-font,36px);line-height:1.35;letter-spacing:-.02em;transform-origin:0 0;will-change:transform,opacity}
+.c-wave-cycle{display:flex;align-items:center;flex-shrink:0}
+.c-wave-word{display:inline-flex;align-items:center;flex-shrink:0;margin-right:1.1em;white-space:nowrap;color:var(--cw-color)}
+.c-wave-word.cw-latin{font-family:CWaveLatin,CWaveKR,sans-serif;font-weight:600;letter-spacing:.01em}
+.c-wave-letter{display:block;flex-shrink:0;transform-origin:50% 70%;will-change:transform;color:inherit}
+.c-wave-word.cw-outline .c-wave-letter{color:transparent;-webkit-text-stroke:var(--cw-stroke,.9px) #f5f5f5;paint-order:stroke fill}
+</style><div id="integrated-root" data-composition-id="integrated-poster" data-duration="20" data-width="390" data-height="720"><div id="stage"><canvas id="world" aria-hidden="true" data-layout-ignore></canvas></div><div id="human-scene" aria-hidden="true" data-layout-ignore></div><div class="intro-meta"><header class="intro-copy"><div class="intro-kicker intro-line">NEXT K-CORE AI CONNECT</div><div class="intro-slogan"><span class="intro-line">AI를 사이에 두고,</span><span class="intro-line">사람과 사람이 만나다.</span></div></header><div class="intro-schedule"><div class="intro-date intro-line">2026.12.09–10</div><div class="intro-place intro-line">DDP 디자인랩 3층 디자인홀</div></div></div><div class="brand-mark" data-layout-ignore><img src="assets/soylab-logo.png" alt="SOY.LAB"></div><div id="typewave" aria-hidden="true" data-layout-ignore></div><section id="poster"><p class="label">NEXT K-CORE AI CONNECT</p><h1>AI를 사이에 두고,<br>사람과 사람이 <strong>만나다.</strong></h1><p class="poster-description">게임·예술·이야기의 전시·상영·강의·교류</p><div class="details"><div><div class="date">2026.12.09–10</div><div class="place">DDP 디자인랩 3층 디자인홀</div></div><nav class="actions" aria-label="행사 안내"><a href="#program" target="_parent">프로그램 보기 ↗</a><a href="#guide" target="_parent">관람 안내 ↘</a></nav></div></section><p class="sr-only" data-layout-ignore>작은 점들이 SOYLAB 글자에 색을 더하고, 하나의 구슬이 HUMAN에서 AI를 거쳐 HUMAN으로 돌아온 뒤 행사 포스터로 이어집니다.</p></div><script src="assets/three.min.js"></script><script src="assets/logo-glyphs.js"></script><script src="wave.js"></script><script src="c-scene.js"></script><script src="human-scene.js"></script><script src="integrated-scene.js"></script><script>(function(){
+  'use strict';
+  const stage=document.getElementById('integrated-root');
+  const scene=window.IntegratedScene;
+  if(!scene)throw new Error('IntegratedScene must load before the composition master.');
+  scene.init();
+  const clock={t:0};
+  const tl=gsap.timeline({paused:true,onUpdate:function(){scene.seek(clock.t);}});
+  [['dots',0],['center',6.8],['fracture',9.82],['human',10.8],['ai',12.6],['return',14],['wave',14.6],['poster',17.5]].forEach(function(label){tl.addLabel(label[0],label[1]);});
+  tl.to(clock,{t:20,duration:20,ease:'none'},0);
+  window.__timelines=window.__timelines||{};
+  window.__timelines['integrated-poster']=tl;
+  window.integratedTimeline=tl;
+  function resize(){const box=stage.getBoundingClientRect();scene.resize(box.width,box.height);scene.seek(clock.t);}
+  resize();
+  new ResizeObserver(resize).observe(stage);
+  tl.seek(0);
+  scene.seek(0);
+})();
+</script></template></body></html>

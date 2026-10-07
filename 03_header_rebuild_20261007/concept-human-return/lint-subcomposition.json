@@ -1,0 +1,21 @@
+{
+  "ok": false,
+  "errorCount": 1,
+  "warningCount": 0,
+  "infoCount": 0,
+  "findings": [
+    {
+      "code": "invalid_parent_traversal_in_asset_path",
+      "severity": "error",
+      "message": "Found 4 asset path(s) traversing above the project root with \"../\" (../assets/ (3), ../scene.js). Renders rewrite this against each sub-composition's source path, but Studio preview and other live consumers resolve against the project root and 404.",
+      "fixHint": "Use plain root-relative paths (e.g. \"assets/...\", \"capture/...\", \"fonts/...\") — compositions are served with the project root as their base URL, so paths must be root-relative, not relative to the compositions/ directory.",
+      "file": "D:\\DDP\\03_header_rebuild_20261007\\concept-human-return\\compositions\\human-poster.html"
+    }
+  ],
+  "filesScanned": 2,
+  "_meta": {
+    "version": "0.8.139",
+    "latestVersion": "0.8.75",
+    "updateAvailable": false
+  }
+}

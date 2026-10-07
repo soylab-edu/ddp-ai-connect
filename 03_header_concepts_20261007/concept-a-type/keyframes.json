@@ -1,0 +1,1306 @@
+{
+  "project": "concept-a-type",
+  "runtime": "all",
+  "compositions": [
+    {
+      "composition": "index.html",
+      "source": "index.html",
+      "tweens": [
+        {
+          "id": "__unresolved__-set-__raw:time-visual",
+          "target": "__unresolved__",
+          "method": "set",
+          "group": "visual",
+          "start": 0,
+          "duration": 0,
+          "end": 0,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 0,
+              "properties": {
+                "opacity": 1
+              }
+            },
+            {
+              "pct": 100,
+              "time": 0,
+              "properties": {
+                "opacity": 0
+              }
+            }
+          ],
+          "path": null
+        },
+        {
+          "id": "__unresolved__-set-__raw:time-visual-2",
+          "target": "__unresolved__",
+          "method": "set",
+          "group": "visual",
+          "start": 0,
+          "duration": 0,
+          "end": 0,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 0,
+              "properties": {
+                "opacity": 1
+              }
+            },
+            {
+              "pct": 100,
+              "time": 0,
+              "properties": {
+                "opacity": 1
+              }
+            }
+          ],
+          "path": null
+        },
+        {
+          "id": "#root-set-__raw:time-other",
+          "target": "#root",
+          "method": "set",
+          "group": "other",
+          "start": 0,
+          "duration": 0,
+          "end": 0,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 0,
+              "properties": {
+                "backgroundColor": 0,
+                "--fg": 0,
+                "--button-ink": 0
+              }
+            },
+            {
+              "pct": 100,
+              "time": 0,
+              "properties": {
+                "backgroundColor": "__raw:bg",
+                "--fg": "__raw:fg",
+                "--button-ink": "__raw:buttonInk"
+              }
+            }
+          ],
+          "path": null
+        },
+        {
+          "id": ".s1 .person-a .glyph-fromTo-0",
+          "target": ".s1 .person-a .glyph",
+          "method": "fromTo",
+          "start": 0,
+          "duration": 0.66,
+          "end": 0.66,
+          "shape": "keyframes",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 0,
+              "properties": {
+                "yPercent": 28,
+                "rotation": -7,
+                "opacity": 0,
+                "stagger": 9
+              }
+            },
+            {
+              "pct": 100,
+              "time": 0.66,
+              "properties": {
+                "yPercent": 0,
+                "rotation": 0,
+                "opacity": 1,
+                "stagger": 9
+              }
+            }
+          ],
+          "path": null,
+          "composedWith": [
+            {
+              "selector": ".s1 .person-a",
+              "summary": "xPercent -35..0, opacity 0..1"
+            }
+          ]
+        },
+        {
+          "id": ".s1 .person-b .glyph-fromTo-180",
+          "target": ".s1 .person-b .glyph",
+          "method": "fromTo",
+          "start": 0.18,
+          "duration": 0.66,
+          "end": 0.84,
+          "shape": "keyframes",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 0.18,
+              "properties": {
+                "yPercent": -28,
+                "rotation": 7,
+                "opacity": 0,
+                "stagger": 9
+              }
+            },
+            {
+              "pct": 100,
+              "time": 0.84,
+              "properties": {
+                "yPercent": 0,
+                "rotation": 0,
+                "opacity": 1,
+                "stagger": 9
+              }
+            }
+          ],
+          "path": null,
+          "composedWith": [
+            {
+              "selector": ".s1 .person-b",
+              "summary": "xPercent 0..35, opacity 0..1"
+            }
+          ]
+        },
+        {
+          "id": ".s1 .bridge-fromTo-550-scale",
+          "target": ".s1 .bridge",
+          "method": "fromTo",
+          "group": "scale",
+          "start": 0.55,
+          "duration": 0.48,
+          "end": 1.03,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 0.55,
+              "properties": {
+                "scaleX": 0
+              }
+            },
+            {
+              "pct": 100,
+              "time": 1.03,
+              "properties": {
+                "scaleX": 1
+              }
+            }
+          ],
+          "path": null
+        },
+        {
+          "id": ".s1 .bridge-to-1030-scale",
+          "target": ".s1 .bridge",
+          "method": "to",
+          "group": "scale",
+          "start": 1.03,
+          "duration": 0.25,
+          "end": 1.28,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 1.03,
+              "properties": {
+                "scaleX": 1
+              }
+            },
+            {
+              "pct": 100,
+              "time": 1.28,
+              "properties": {
+                "scaleX": 0
+              }
+            }
+          ],
+          "path": null
+        },
+        {
+          "id": ".s1 .small-ai-fromTo-1050",
+          "target": ".s1 .small-ai",
+          "method": "fromTo",
+          "start": 1.05,
+          "duration": 0.55,
+          "end": 1.6,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 1.05,
+              "properties": {
+                "scale": 0,
+                "rotation": -90
+              }
+            },
+            {
+              "pct": 100,
+              "time": 1.6,
+              "properties": {
+                "scale": 1,
+                "rotation": 0
+              }
+            }
+          ],
+          "path": null
+        },
+        {
+          "id": ".s1 .person-a-to-1700-position",
+          "target": ".s1 .person-a",
+          "method": "to",
+          "group": "position",
+          "start": 1.7,
+          "duration": 0.5,
+          "end": 2.2,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 1.7,
+              "properties": {
+                "xPercent": 0
+              }
+            },
+            {
+              "pct": 100,
+              "time": 2.2,
+              "properties": {
+                "xPercent": "__raw:mobile?-8:-5"
+              }
+            }
+          ],
+          "path": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 0,
+              "y": 0
+            }
+          ]
+        },
+        {
+          "id": ".s1 .person-b-to-1700-position",
+          "target": ".s1 .person-b",
+          "method": "to",
+          "group": "position",
+          "start": 1.7,
+          "duration": 0.5,
+          "end": 2.2,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 1.7,
+              "properties": {
+                "xPercent": 0
+              }
+            },
+            {
+              "pct": 100,
+              "time": 2.2,
+              "properties": {
+                "xPercent": "__raw:mobile?8:5"
+              }
+            }
+          ],
+          "path": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 0,
+              "y": 0
+            }
+          ]
+        },
+        {
+          "id": ".s1 .person-a-to-2300",
+          "target": ".s1 .person-a",
+          "method": "to",
+          "start": 2.3,
+          "duration": 0.3,
+          "end": 2.6,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 2.3,
+              "properties": {
+                "xPercent": 0,
+                "opacity": 1
+              }
+            },
+            {
+              "pct": 100,
+              "time": 2.6,
+              "properties": {
+                "xPercent": -35,
+                "opacity": 0
+              }
+            }
+          ],
+          "path": null
+        },
+        {
+          "id": ".s1 .person-b-to-2300",
+          "target": ".s1 .person-b",
+          "method": "to",
+          "start": 2.3,
+          "duration": 0.3,
+          "end": 2.6,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 2.3,
+              "properties": {
+                "xPercent": 0,
+                "opacity": 1
+              }
+            },
+            {
+              "pct": 100,
+              "time": 2.6,
+              "properties": {
+                "xPercent": 35,
+                "opacity": 0
+              }
+            }
+          ],
+          "path": null
+        },
+        {
+          "id": ".s2 .space-a-fromTo-2600",
+          "target": ".s2 .space-a",
+          "method": "fromTo",
+          "start": 2.6,
+          "duration": 0.65,
+          "end": 3.25,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 2.6,
+              "properties": {
+                "xPercent": 40,
+                "rotation": 8
+              }
+            },
+            {
+              "pct": 100,
+              "time": 3.25,
+              "properties": {
+                "xPercent": 0,
+                "rotation": 0
+              }
+            }
+          ],
+          "path": null,
+          "composedWith": [
+            {
+              "selector": ".s2 .state-inner",
+              "summary": "yPercent -15..0, opacity 0..1"
+            }
+          ]
+        },
+        {
+          "id": ".s2 .space-b-fromTo-2600",
+          "target": ".s2 .space-b",
+          "method": "fromTo",
+          "start": 2.6,
+          "duration": 0.65,
+          "end": 3.25,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 2.6,
+              "properties": {
+                "xPercent": -40,
+                "rotation": -8
+              }
+            },
+            {
+              "pct": 100,
+              "time": 3.25,
+              "properties": {
+                "xPercent": 0,
+                "rotation": 0
+              }
+            }
+          ],
+          "path": null,
+          "composedWith": [
+            {
+              "selector": ".s2 .state-inner",
+              "summary": "yPercent -15..0, opacity 0..1"
+            }
+          ]
+        },
+        {
+          "id": ".s2 .small-ai-fromTo-2960",
+          "target": ".s2 .small-ai",
+          "method": "fromTo",
+          "start": 2.96,
+          "duration": 0.4,
+          "end": 3.36,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 2.96,
+              "properties": {
+                "scale": 0.1,
+                "opacity": 0
+              }
+            },
+            {
+              "pct": 100,
+              "time": 3.36,
+              "properties": {
+                "scale": 1,
+                "opacity": 1
+              }
+            }
+          ],
+          "path": null,
+          "composedWith": [
+            {
+              "selector": ".s2 .state-inner",
+              "summary": "yPercent -15..0, opacity 0..1"
+            }
+          ]
+        },
+        {
+          "id": ".s2 .sub-fromTo-3280",
+          "target": ".s2 .sub",
+          "method": "fromTo",
+          "start": 3.28,
+          "duration": 0.48,
+          "end": 3.76,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 3.28,
+              "properties": {
+                "y": 30,
+                "opacity": 0
+              }
+            },
+            {
+              "pct": 100,
+              "time": 3.76,
+              "properties": {
+                "y": 0,
+                "opacity": 1
+              }
+            }
+          ],
+          "path": [
+            {
+              "x": 0,
+              "y": 30
+            },
+            {
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "composedWith": [
+            {
+              "selector": ".s2 .state-inner",
+              "summary": "yPercent -15..0, opacity 0..1"
+            }
+          ]
+        },
+        {
+          "id": ".s2 .space-a-to-4150-position",
+          "target": ".s2 .space-a",
+          "method": "to",
+          "group": "position",
+          "start": 4.15,
+          "duration": 0.4,
+          "end": 4.55,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 4.15,
+              "properties": {
+                "xPercent": 0
+              }
+            },
+            {
+              "pct": 100,
+              "time": 4.55,
+              "properties": {
+                "xPercent": -8
+              }
+            }
+          ],
+          "path": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "composedWith": [
+            {
+              "selector": ".s2 .state-inner",
+              "summary": "yPercent -15..0, opacity 0..1"
+            }
+          ]
+        },
+        {
+          "id": ".s2 .space-b-to-4150-position",
+          "target": ".s2 .space-b",
+          "method": "to",
+          "group": "position",
+          "start": 4.15,
+          "duration": 0.4,
+          "end": 4.55,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 4.15,
+              "properties": {
+                "xPercent": 0
+              }
+            },
+            {
+              "pct": 100,
+              "time": 4.55,
+              "properties": {
+                "xPercent": 8
+              }
+            }
+          ],
+          "path": [
+            {
+              "x": 0,
+              "y": 0
+            },
+            {
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "composedWith": [
+            {
+              "selector": ".s2 .state-inner",
+              "summary": "yPercent -15..0, opacity 0..1"
+            }
+          ]
+        },
+        {
+          "id": ".s2 .state-inner-to-4940",
+          "target": ".s2 .state-inner",
+          "method": "to",
+          "start": 4.94,
+          "duration": 0.26,
+          "end": 5.2,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 4.94,
+              "properties": {
+                "yPercent": 0,
+                "opacity": 1
+              }
+            },
+            {
+              "pct": 100,
+              "time": 5.2,
+              "properties": {
+                "yPercent": -15,
+                "opacity": 0
+              }
+            }
+          ],
+          "path": null
+        },
+        {
+          "id": ".s3 .g1-fromTo-5200",
+          "target": ".s3 .g1",
+          "method": "fromTo",
+          "start": 5.2,
+          "duration": 0.5,
+          "end": 5.7,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 5.2,
+              "properties": {
+                "xPercent": -65,
+                "skewX": -14,
+                "opacity": 0
+              }
+            },
+            {
+              "pct": 100,
+              "time": 5.7,
+              "properties": {
+                "xPercent": 0,
+                "skewX": 0,
+                "opacity": 1
+              }
+            }
+          ],
+          "path": null,
+          "composedWith": [
+            {
+              "selector": ".s3 .creative",
+              "summary": "(static)"
+            },
+            {
+              "selector": ".s3 .state-inner",
+              "summary": "xPercent 0..15, opacity 0..1"
+            }
+          ]
+        },
+        {
+          "id": ".s3 .g2-fromTo-5320",
+          "target": ".s3 .g2",
+          "method": "fromTo",
+          "start": 5.32,
+          "duration": 0.55,
+          "end": 5.87,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 5.32,
+              "properties": {
+                "yPercent": 24,
+                "scaleY": 1.1,
+                "opacity": 0
+              }
+            },
+            {
+              "pct": 100,
+              "time": 5.87,
+              "properties": {
+                "yPercent": 0,
+                "scaleY": 1,
+                "opacity": 1
+              }
+            }
+          ],
+          "path": null,
+          "composedWith": [
+            {
+              "selector": ".s3 .creative",
+              "summary": "(static)"
+            },
+            {
+              "selector": ".s3 .state-inner",
+              "summary": "xPercent 0..15, opacity 0..1"
+            }
+          ]
+        },
+        {
+          "id": ".s3 .discipline-fromTo-5850",
+          "target": ".s3 .discipline",
+          "method": "fromTo",
+          "start": 5.85,
+          "duration": 0.45,
+          "end": 6.3,
+          "shape": "keyframes",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 5.85,
+              "properties": {
+                "x": 80,
+                "opacity": 0,
+                "stagger": 16
+              }
+            },
+            {
+              "pct": 100,
+              "time": 6.3,
+              "properties": {
+                "x": 0,
+                "opacity": 1,
+                "stagger": 16
+              }
+            }
+          ],
+          "path": [
+            {
+              "x": 80,
+              "y": 0
+            },
+            {
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "composedWith": [
+            {
+              "selector": ".s3 .state-inner",
+              "summary": "xPercent 0..15, opacity 0..1"
+            }
+          ]
+        },
+        {
+          "id": ".s3 .sub-fromTo-6350-visual",
+          "target": ".s3 .sub",
+          "method": "fromTo",
+          "group": "visual",
+          "start": 6.35,
+          "duration": 0.4,
+          "end": 6.75,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 6.35,
+              "properties": {
+                "opacity": 0
+              }
+            },
+            {
+              "pct": 100,
+              "time": 6.75,
+              "properties": {
+                "opacity": 1
+              }
+            }
+          ],
+          "path": null,
+          "composedWith": [
+            {
+              "selector": ".s3 .state-inner",
+              "summary": "xPercent 0..15, opacity 0..1"
+            }
+          ]
+        },
+        {
+          "id": ".s3 .creative-to-7100-scale",
+          "target": ".s3 .creative",
+          "method": "to",
+          "group": "scale",
+          "start": 7.1,
+          "duration": 0.35,
+          "end": 7.45,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 7.1,
+              "properties": {
+                "scale": 1,
+                "transformOrigin": 0
+              }
+            },
+            {
+              "pct": 100,
+              "time": 7.45,
+              "properties": {
+                "scale": 0.88,
+                "transformOrigin": "left center"
+              }
+            }
+          ],
+          "path": null,
+          "composedWith": [
+            {
+              "selector": ".s3 .state-inner",
+              "summary": "xPercent 0..15, opacity 0..1"
+            }
+          ]
+        },
+        {
+          "id": ".s3 .state-inner-to-7540",
+          "target": ".s3 .state-inner",
+          "method": "to",
+          "start": 7.54,
+          "duration": 0.26,
+          "end": 7.8,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 7.54,
+              "properties": {
+                "xPercent": 0,
+                "opacity": 1
+              }
+            },
+            {
+              "pct": 100,
+              "time": 7.8,
+              "properties": {
+                "xPercent": 15,
+                "opacity": 0
+              }
+            }
+          ],
+          "path": null
+        },
+        {
+          "id": ".s4 .join-a-fromTo-7800",
+          "target": ".s4 .join-a",
+          "method": "fromTo",
+          "start": 7.8,
+          "duration": 0.65,
+          "end": 8.45,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 7.8,
+              "properties": {
+                "xPercent": -55,
+                "yPercent": -15,
+                "rotation": -10,
+                "opacity": 0
+              }
+            },
+            {
+              "pct": 100,
+              "time": 8.45,
+              "properties": {
+                "xPercent": 0,
+                "yPercent": 0,
+                "rotation": 0,
+                "opacity": 1
+              }
+            }
+          ],
+          "path": null,
+          "composedWith": [
+            {
+              "selector": ".s4 .together",
+              "summary": "(static)"
+            },
+            {
+              "selector": ".s4 .state-inner",
+              "summary": "opacity 0..1"
+            }
+          ]
+        },
+        {
+          "id": ".s4 .join-b-fromTo-7900",
+          "target": ".s4 .join-b",
+          "method": "fromTo",
+          "start": 7.9,
+          "duration": 0.65,
+          "end": 8.55,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 7.9,
+              "properties": {
+                "xPercent": 55,
+                "yPercent": 15,
+                "rotation": 10,
+                "opacity": 0
+              }
+            },
+            {
+              "pct": 100,
+              "time": 8.55,
+              "properties": {
+                "xPercent": 0,
+                "yPercent": 0,
+                "rotation": 0,
+                "opacity": 1
+              }
+            }
+          ],
+          "path": null,
+          "composedWith": [
+            {
+              "selector": ".s4 .together",
+              "summary": "(static)"
+            },
+            {
+              "selector": ".s4 .state-inner",
+              "summary": "opacity 0..1"
+            }
+          ]
+        },
+        {
+          "id": ".s4 .accent-line-fromTo-8550-scale",
+          "target": ".s4 .accent-line",
+          "method": "fromTo",
+          "group": "scale",
+          "start": 8.55,
+          "duration": 0.35,
+          "end": 8.9,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 8.55,
+              "properties": {
+                "scaleX": 0
+              }
+            },
+            {
+              "pct": 100,
+              "time": 8.9,
+              "properties": {
+                "scaleX": 1
+              }
+            }
+          ],
+          "path": null,
+          "composedWith": [
+            {
+              "selector": ".s4 .state-inner",
+              "summary": "opacity 0..1"
+            }
+          ]
+        },
+        {
+          "id": ".s4 .sub-fromTo-8750",
+          "target": ".s4 .sub",
+          "method": "fromTo",
+          "start": 8.75,
+          "duration": 0.48,
+          "end": 9.23,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 8.75,
+              "properties": {
+                "y": 20,
+                "opacity": 0
+              }
+            },
+            {
+              "pct": 100,
+              "time": 9.23,
+              "properties": {
+                "y": 0,
+                "opacity": 1
+              }
+            }
+          ],
+          "path": [
+            {
+              "x": 0,
+              "y": 20
+            },
+            {
+              "x": 0,
+              "y": 0
+            }
+          ],
+          "composedWith": [
+            {
+              "selector": ".s4 .state-inner",
+              "summary": "opacity 0..1"
+            }
+          ]
+        },
+        {
+          "id": ".s4 .together-to-9600-scale",
+          "target": ".s4 .together",
+          "method": "to",
+          "group": "scale",
+          "start": 9.6,
+          "duration": 0.22,
+          "end": 9.82,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 9.6,
+              "properties": {
+                "scale": 1
+              }
+            },
+            {
+              "pct": 100,
+              "time": 9.82,
+              "properties": {
+                "scale": 0.98
+              }
+            }
+          ],
+          "path": null,
+          "composedWith": [
+            {
+              "selector": ".s4 .state-inner",
+              "summary": "opacity 0..1"
+            }
+          ]
+        },
+        {
+          "id": ".s4 .state-inner-to-10150",
+          "target": ".s4 .state-inner",
+          "method": "to",
+          "start": 10.15,
+          "duration": 0.25,
+          "end": 10.4,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 10.15,
+              "properties": {
+                "scale": 1,
+                "opacity": 1
+              }
+            },
+            {
+              "pct": 100,
+              "time": 10.4,
+              "properties": {
+                "scale": 1.07,
+                "opacity": 0
+              }
+            }
+          ],
+          "path": null
+        },
+        {
+          "id": ".s5 .preline-fromTo-10400",
+          "target": ".s5 .preline",
+          "method": "fromTo",
+          "start": 10.4,
+          "duration": 0.42,
+          "end": 10.82,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 10.4,
+              "properties": {
+                "y": 20,
+                "opacity": 0
+              }
+            },
+            {
+              "pct": 100,
+              "time": 10.82,
+              "properties": {
+                "y": 0,
+                "opacity": 1
+              }
+            }
+          ],
+          "path": [
+            {
+              "x": 0,
+              "y": 20
+            },
+            {
+              "x": 0,
+              "y": 0
+            }
+          ]
+        },
+        {
+          "id": ".s5 .people-unit:first-child-fromTo-10550",
+          "target": ".s5 .people-unit:first-child",
+          "method": "fromTo",
+          "start": 10.55,
+          "duration": 0.65,
+          "end": 11.2,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 10.55,
+              "properties": {
+                "x": "__raw:mobile?-30:-60",
+                "y": 16,
+                "opacity": 0
+              }
+            },
+            {
+              "pct": 100,
+              "time": 11.2,
+              "properties": {
+                "x": 0,
+                "y": 0,
+                "opacity": 1
+              }
+            }
+          ],
+          "path": [
+            {
+              "x": 0,
+              "y": 16
+            },
+            {
+              "x": 0,
+              "y": 0
+            }
+          ]
+        },
+        {
+          "id": ".s5 .people-unit:last-child-fromTo-10690",
+          "target": ".s5 .people-unit:last-child",
+          "method": "fromTo",
+          "start": 10.69,
+          "duration": 0.65,
+          "end": 11.34,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 10.69,
+              "properties": {
+                "x": "__raw:mobile?30:60",
+                "y": -16,
+                "opacity": 0
+              }
+            },
+            {
+              "pct": 100,
+              "time": 11.34,
+              "properties": {
+                "x": 0,
+                "y": 0,
+                "opacity": 1
+              }
+            }
+          ],
+          "path": [
+            {
+              "x": 0,
+              "y": -16
+            },
+            {
+              "x": 0,
+              "y": 0
+            }
+          ]
+        },
+        {
+          "id": ".s5 .meet-fromTo-10950",
+          "target": ".s5 .meet",
+          "method": "fromTo",
+          "start": 10.95,
+          "duration": 0.6,
+          "end": 11.55,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 10.95,
+              "properties": {
+                "y": 30,
+                "opacity": 0
+              }
+            },
+            {
+              "pct": 100,
+              "time": 11.55,
+              "properties": {
+                "y": 0,
+                "opacity": 1
+              }
+            }
+          ],
+          "path": [
+            {
+              "x": 0,
+              "y": 30
+            },
+            {
+              "x": 0,
+              "y": 0
+            }
+          ]
+        },
+        {
+          "id": ".s5 .invitation-fromTo-11200",
+          "target": ".s5 .invitation",
+          "method": "fromTo",
+          "start": 11.2,
+          "duration": 0.6,
+          "end": 11.8,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 11.2,
+              "properties": {
+                "y": 15,
+                "opacity": 0
+              }
+            },
+            {
+              "pct": 100,
+              "time": 11.8,
+              "properties": {
+                "y": 0,
+                "opacity": 1
+              }
+            }
+          ],
+          "path": [
+            {
+              "x": 0,
+              "y": 15
+            },
+            {
+              "x": 0,
+              "y": 0
+            }
+          ]
+        },
+        {
+          "id": ".progress-fromTo-0-scale",
+          "target": ".progress",
+          "method": "fromTo",
+          "group": "scale",
+          "start": 0,
+          "duration": 14,
+          "end": 14,
+          "shape": "flat",
+          "keyframes": [
+            {
+              "pct": 0,
+              "time": 0,
+              "properties": {
+                "scaleX": 0
+              }
+            },
+            {
+              "pct": 100,
+              "time": 14,
+              "properties": {
+                "scaleX": 1
+              }
+            }
+          ],
+          "path": null
+        }
+      ],
+      "traces": [],
+      "cssKeyframes": [],
+      "anime": []
+    }
+  ],
+  "_meta": {
+    "version": "0.8.139",
+    "latestVersion": "0.8.75",
+    "updateAvailable": false
+  }
+}

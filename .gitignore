@@ -1,0 +1,16 @@
+node_modules/
+.git/
+.claude/
+.codex/
+.venv/
+venv/
+__pycache__/
+*.pyc
+.env
+.env.*
+!.env.example
+*.log
+.DS_Store
+Thumbs.db
+.hyperframes/
+.thumbnails/

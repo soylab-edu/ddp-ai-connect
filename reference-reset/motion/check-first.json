@@ -1,0 +1,291 @@
+{
+  "ok": false,
+  "strict": false,
+  "browserSkipped": false,
+  "lint": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "filesScanned": 8
+  },
+  "runtime": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": []
+  },
+  "layout": {
+    "ok": false,
+    "errorCount": 4,
+    "warningCount": 0,
+    "infoCount": 1,
+    "findings": [
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 1.625,
+        "selector": "span.date-numeral",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 506.25,
+          "top": 109.19,
+          "right": 997.45,
+          "bottom": 597.22,
+          "width": 491.2,
+          "height": 488.03
+        },
+        "containerSelector": "div.date-days",
+        "text": "12",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/02-date.html",
+        "bbox": {
+          "x": 506.25,
+          "y": 109.19,
+          "width": 491.2,
+          "height": 488.03
+        },
+        "firstSeen": 1.625,
+        "lastSeen": 2.625,
+        "occurrences": 10,
+        "heldMs": 1000
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 11.25,
+        "selector": "#motion-07-scene > div:nth-of-type(1) > div:nth-of-type(1)",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 62.16,
+          "top": 61.47,
+          "right": 184.34,
+          "bottom": 92.34,
+          "width": 122.18,
+          "height": 30.87
+        },
+        "containerSelector": "span.final-numeral",
+        "text": "NEXT K-CORE AI CONNECT / 2026",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/07-final.html",
+        "bbox": {
+          "x": 62.16,
+          "y": 61.47,
+          "width": 122.18,
+          "height": 30.87
+        },
+        "firstSeen": 11.25,
+        "lastSeen": 16,
+        "occurrences": 41,
+        "heldMs": 4750
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 11.25,
+        "selector": "span.final-numeral",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 112.55,
+          "top": 55.03,
+          "right": 440.02,
+          "bottom": 521.03,
+          "width": 327.47,
+          "height": 466
+        },
+        "containerSelector": "div.final-days",
+        "text": "12",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/07-final.html",
+        "bbox": {
+          "x": 112.55,
+          "y": 55.03,
+          "width": 327.47,
+          "height": 466
+        },
+        "firstSeen": 11.25,
+        "lastSeen": 16,
+        "occurrences": 41,
+        "heldMs": 4750
+      },
+      {
+        "code": "content_overlap",
+        "severity": "error",
+        "time": 11.25,
+        "selector": "span.final-numeral",
+        "message": "Two text blocks overlap and may render unreadable.",
+        "rect": {
+          "left": 112.55,
+          "top": 55.03,
+          "right": 440.02,
+          "bottom": 521.03,
+          "width": 327.47,
+          "height": 466
+        },
+        "containerSelector": "div.final-days > span:nth-of-type(1)",
+        "text": "12",
+        "fixHint": "Give each block its own zone, or mark intentional layering with data-layout-allow-overlap.",
+        "dataAttributes": {},
+        "sourceFile": "compositions/07-final.html",
+        "bbox": {
+          "x": 112.55,
+          "y": 55.03,
+          "width": 327.47,
+          "height": 466
+        },
+        "firstSeen": 11.25,
+        "lastSeen": 16,
+        "occurrences": 41,
+        "heldMs": 4750
+      },
+      {
+        "code": "canvas_overflow",
+        "severity": "info",
+        "time": 2.05,
+        "selector": "span.date-numeral",
+        "message": "Text extends outside the composition canvas.",
+        "rect": {
+          "left": 506.25,
+          "top": -4.81,
+          "right": 997.45,
+          "bottom": 693.19,
+          "width": 491.2,
+          "height": 698
+        },
+        "containerSelector": "#ai-connect-motion",
+        "text": "12",
+        "fixHint": "Move the text inward, reduce its size, or mark intentional off-canvas animation with data-layout-allow-overflow.",
+        "containerRect": {
+          "left": 0,
+          "top": 0,
+          "right": 1680,
+          "bottom": 720,
+          "width": 1680,
+          "height": 720
+        },
+        "overflow": {
+          "top": 4.81
+        },
+        "dataAttributes": {},
+        "sourceFile": "compositions/02-date.html",
+        "bbox": {
+          "x": 506.25,
+          "y": -4.81,
+          "width": 491.2,
+          "height": 698
+        },
+        "firstSeen": 2.05,
+        "lastSeen": 2.05,
+        "occurrences": 1,
+        "heldMs": 0
+      }
+    ],
+    "duration": 16,
+    "samples": [
+      0.5,
+      2.05,
+      3.9,
+      6.25,
+      8.1,
+      9,
+      9.4,
+      9.8,
+      10.2,
+      10.6,
+      11,
+      13.6,
+      15.9
+    ],
+    "transitionSamples": [],
+    "transitionSamplesDropped": 0,
+    "tolerance": 2,
+    "totalIssueCount": 5,
+    "truncated": false
+  },
+  "motion": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 0,
+    "infoCount": 0,
+    "findings": [],
+    "enabled": false,
+    "samples": 0
+  },
+  "contrast": {
+    "ok": true,
+    "errorCount": 0,
+    "warningCount": 1,
+    "infoCount": 0,
+    "findings": [
+      {
+        "code": "contrast_aa_failure",
+        "severity": "warning",
+        "message": "Contrast is 2.55:1; WCAG AA requires 3:1.",
+        "text": ".",
+        "fg": "rgb(255,255,255)",
+        "bg": "rgb(245,132,56)",
+        "ratio": 2.55,
+        "requiredRatio": 3,
+        "suggestedColor": "rgb(83,83,83)",
+        "large": true,
+        "selector": "main > div:nth-of-type(6) > div > section > div:nth-of-type(5) > div:nth-of-type(3) > div > span",
+        "dataAttributes": {},
+        "sourceFile": "compositions/06-connect.html",
+        "bbox": {
+          "x": 1516.234375,
+          "y": 177.15625,
+          "width": 80.28125,
+          "height": 383
+        },
+        "time": 10.6
+      }
+    ],
+    "enabled": true,
+    "samples": [
+      0.5,
+      6.25,
+      9.4,
+      10.6,
+      15.9
+    ],
+    "checked": 35,
+    "passed": 34
+  },
+  "hdr": {
+    "autoPromotion": null,
+    "inspection": "available"
+  },
+  "snapshots": {
+    "enabled": true,
+    "files": [
+      "snapshots\\frame-00-at-0.5s.png",
+      "snapshots\\frame-01-at-6.3s.png",
+      "snapshots\\frame-02-at-9.4s.png",
+      "snapshots\\frame-03-at-10.6s.png",
+      "snapshots\\frame-04-at-15.9s.png"
+    ],
+    "times": [
+      0.5,
+      6.25,
+      9.4,
+      10.6,
+      15.9
+    ],
+    "findingFiles": [
+      "snapshots\\finding-00-content_overlap.png",
+      "snapshots\\finding-01-content_overlap.png",
+      "snapshots\\finding-02-content_overlap.png",
+      "snapshots\\finding-03-content_overlap.png"
+    ]
+  },
+  "_meta": {
+    "version": "0.8.139",
+    "latestVersion": "0.8.75",
+    "updateAvailable": false
+  }
+}

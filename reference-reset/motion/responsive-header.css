@@ -1,0 +1,65 @@
+html,body{height:100%;overflow:hidden}
+.header-shell{height:min(100svh,calc(100vw * 3 / 7 + 76px));display:flex;flex-direction:column}
+.motion-host{flex:1;min-height:0;aspect-ratio:auto}
+.player-bar{height:54px;flex:none;padding:8px 3.7%;gap:10px;flex-wrap:nowrap}
+.player-actions{align-items:center;flex-wrap:nowrap}
+.player-actions button{padding:8px 10px;white-space:nowrap}
+.music-credit{height:22px;flex:none;margin:0;padding:0 3.7% 6px;color:#aaa;font-size:10px}
+.music-credit a,.credits-link{color:#bcb3cd}
+.credits-link{font-size:10px;white-space:nowrap;margin-left:4px}
+html.embedded .header-shell{height:100svh}
+html.embedded .music-credit{display:none}
+.mobile-only{display:none}
+.final .actions a{padding:1cqw 1.2cqw;font:800 .75cqw Pretendard;border:1px solid #aaa;white-space:nowrap;text-decoration:none;color:inherit}
+.final .actions a:first-child{background:#ccff00;color:#080808;border-color:#ccff00}
+.final .actions a:focus-visible{outline:3px solid #fff;outline-offset:4px}
+@media(max-width:719px){
+  .header-shell{height:100svh}
+  #play-status{display:none}
+  .player-bar{padding:7px 12px;font-size:11px;justify-content:center}
+  .player-actions{width:100%;justify-content:center;gap:6px}
+  .player-actions button{padding:9px 8px;font-size:11px}
+  .music-credit{font-size:9px;text-align:center}
+  .portrait .meta{inset:6cqw 7cqw auto;font-size:2.15cqw;line-height:1.6;letter-spacing:.06em}
+  .portrait .footer{left:7cqw;right:7cqw;bottom:6cqw;font-size:1.9cqw;letter-spacing:.04em}
+  .portrait .dots{left:0;top:37cqw;width:100cqw;height:100cqw}
+  .portrait .opening-label{top:31cqw;font-size:11cqw}
+  .portrait .opening-label.left{left:7cqw}.portrait .opening-label.right{right:7cqw}
+  .portrait .ink-drop{width:1.2cqw;height:1.2cqw}
+  .portrait .opening-line{bottom:30cqw;font-size:2.6cqw;letter-spacing:.15em}
+  .portrait .date-word{top:43cqw;gap:2cqw;padding-bottom:3cqw}
+  .portrait .date-numeral{font-size:72cqw}
+  .portrait .date-month-label{font-size:11cqw}
+  .portrait .date-days{top:113cqw;font-size:9cqw}
+  .portrait .date-days span{font-size:3.8cqw;margin-left:3cqw}
+  .portrait .message-copy{left:7cqw;top:62cqw;font-size:8.3cqw;line-height:1.35;letter-spacing:-.065em}
+  .portrait .message-line-mask{line-height:1.35}
+  .portrait .message-sub{right:8cqw;bottom:31cqw;font-size:2.7cqw;line-height:1.9}
+  .portrait .wave-field{left:-120cqw;top:-16cqw;width:340cqw}
+  .portrait .ribbon{font-size:14cqw;line-height:1.08}
+  .portrait .wave .meta,.portrait .wave .footer{left:0;right:0;padding-inline:7cqw}
+  .portrait .logo-art{width:80cqw;height:86cqw;left:10cqw;top:40cqw}
+  .portrait .logo-side{left:8cqw;top:138cqw;font-size:2.5cqw;letter-spacing:.08em}
+  .portrait .logo-side.right{left:auto;right:8cqw}
+  .portrait .word-mask{left:6cqw;right:6cqw;top:49cqw;height:80cqw}
+  .portrait .word-state[data-word-index="0"] .word-large{font-size:20cqw;line-height:.98}
+  .portrait .mobile-only{display:block}
+  .portrait .final .meta{right:28cqw}
+  .portrait .final-stamp{top:5cqw;right:6cqw;width:17cqw;height:18cqw}
+  .portrait .final-date{left:7cqw;top:26cqw}
+  .portrait .final-month{gap:2cqw}
+  .portrait .final-numeral{font-size:52cqw}
+  .portrait .final-month-label{font-size:8cqw}
+  .portrait .final-days{font-size:5cqw;margin-top:2cqw}
+  .portrait .final-days span{font-size:3.2cqw;margin-left:2cqw}
+  .portrait .final-main{left:8cqw;right:7cqw;top:91cqw}
+  .portrait .final-kicker{font-size:2.4cqw;letter-spacing:.15em;margin-bottom:2cqw}
+  .portrait .final-title{font-size:10cqw;line-height:1;margin-bottom:3cqw}
+  .portrait .final-slogan{font-size:5.4cqw;line-height:1.4}
+  .portrait .final-info{left:8cqw;right:8cqw;bottom:17cqw;padding-top:3cqw;grid-template-columns:.9fr 1.5fr;gap:3cqw 4cqw;align-items:start}
+  .portrait .detail-label{font-size:2.1cqw;margin-bottom:1.1cqw}
+  .portrait .detail-value{font-size:3.65cqw;line-height:1.35}
+  .portrait .actions{grid-column:1/-1;justify-content:stretch;gap:2cqw}
+  .portrait .final .actions a{flex:1;text-align:center;font-size:3cqw;padding:3cqw 1cqw}
+  .portrait .final-wave{bottom:5cqw;font-size:3.2cqw}
+}

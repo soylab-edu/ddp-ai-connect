@@ -1,0 +1,15 @@
+<div id="root" data-composition-id="type-poster" data-width="1440" data-height="900" data-duration="14">
+  <h1 class="sr-only" data-layout-ignore>NEXT K-CORE AI CONNECT — AI를 사이에 두고, 사람과 사람이 만나다.</h1>
+  <div class="brandline"><div class="event-name"><span>NEXT K-CORE</span><span>AI CONNECT</span></div><div class="brand-name">SOYLAB<span>사람을 모으고, 함께 만드는 자리</span></div></div>
+  <p class="edition">DECEMBER 2026 <span>SEOUL / DDP</span></p>
+  <div class="controls"><span class="status" aria-hidden="true">14 SEC</span><button type="button" id="pause">일시정지</button><button type="button" id="replay">다시보기 ↻</button></div>
+  <div class="stage" id="type-stage" aria-hidden="true">
+    <div class="state s1"><div class="state-inner"><p class="sup">결국, 중요한 건</p><div class="pair"><span class="word person-a"><span class="glyph">사</span><span class="glyph">람</span></span><span class="word person-b"><span class="glyph">사</span><span class="glyph">람</span></span></div><i class="bridge"></i><div class="between"><span class="small-ai">AI</span></div><p class="sub">기술보다 먼저, 사람과 사람.</p></div></div>
+    <div class="state s2"><div class="state-inner"><p class="sup">AI도 결국, 사람과 사람</p><div class="space-word word"><span class="glyph space-a">사</span><span class="glyph space-b">이</span></div><div class="between"><span class="small-ai">AI</span></div><p class="sub">그 사이에서<br class="editorial-break">가능성이 열린다.</p></div></div>
+    <div class="state s3"><div class="state-inner"><p class="sup">연결이 만드는</p><div class="creative word"><span class="glyph g1">창</span><span class="glyph g2">작</span></div><div class="disciplines"><span class="discipline">게임</span><span class="discipline">예술</span><span class="discipline">이야기</span></div><p class="sub">전시 · 상영 · 강의 · 교류로 만나는 AI 창작</p></div></div>
+    <div class="state s4"><div class="state-inner"><p class="sup">사람을 모으고, 사람들과</p><div class="together word"><span class="glyph join-a">함</span><span class="glyph join-b">께</span></div><i class="accent-line"></i><p class="sub">그 자리를 만드는 이름,<br class="editorial-break">SOYLAB.</p></div></div>
+    <div class="state s5"><div class="state-inner"><p class="preline">AI를 사이에 두고,</p><div class="people-line"><span class="people-unit"><strong>사람</strong><em>과</em></span><span class="people-unit"><strong>사람</strong><em>이</em></span></div><strong class="meet">만나다.</strong><p class="invitation">사람의 연결이 더 중요하기에.<br class="editorial-break">우리는 사람들을 모으고 함께하려 합니다.</p></div></div>
+  </div>
+  <div class="event-info"><p class="event-description">게임·예술·이야기, <span class="mobile-break"></span>전시·상영·강의·교류를 잇는 AI 창작 통합 행사</p><div class="info-grid"><p class="date">2026.12.09–10</p><p class="venue">DDP 디자인랩 3층 디자인홀</p><nav class="actions" aria-label="행사 안내"><a class="primary" href="#program">프로그램 보기 ↗</a><a href="#guide">참여 안내 ↓</a></nav></div><p class="opening-hours"><span>일반 관람 · 12/9 10:30–19:40</span><span>12/10 15:00–19:40</span></p></div>
+  <div class="progress" aria-hidden="true"></div>
+</div>

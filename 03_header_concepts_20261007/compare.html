@@ -1,0 +1,20 @@
+<!doctype html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>AI CONNECT — 헤더 시안 비교</title>
+<style>
+:root{color-scheme:light;font-family:Arial,'Malgun Gothic',sans-serif;color:#201c25;background:#f3f2f4}
+*{box-sizing:border-box}body{margin:0;padding:28px 24px 48px}main{max-width:1440px;margin:auto}header{display:flex;gap:20px;justify-content:space-between;align-items:center;margin-bottom:22px}h1{font-size:21px;letter-spacing:-.7px;margin:0}header p{font-size:13px;color:#6b6570;margin:7px 0 0}.tabs{display:flex;gap:7px;flex-wrap:wrap}button{font:600 13px/1.4 inherit;border:1px solid #d3ced9;border-radius:8px;padding:11px 17px;background:#fff;color:#39323f;cursor:pointer}button[aria-pressed=true]{background:#231a2f;color:white;border-color:#231a2f}button:focus-visible,a:focus-visible{outline:3px solid #7a00ee;outline-offset:4px}section[hidden]{display:none}video{display:block;width:100%;height:auto;max-height:calc(100svh - 210px);background:#e9e7ec;border-radius:12px;object-fit:contain}.caption{display:flex;align-items:flex-start;justify-content:space-between;gap:20px;padding:18px 0 0}.caption strong{font-size:15px}.caption p{font-size:13px;line-height:1.7;color:#6b6570;margin:7px 0 0}.caption a{display:inline-block;color:#4d198e;font-size:13px;font-weight:600;text-decoration:none;border-bottom:1px solid #baa4d7;padding-bottom:4px}.links{display:flex;gap:17px;flex-wrap:wrap;padding-top:3px}.review{border-top:1px solid #d8d3dd;margin-top:26px;padding-top:15px;font-size:12px;line-height:1.8;color:#6b6570}.review a{color:#4d198e}@media(max-width:660px){body{padding:20px 12px 35px}header{display:block}h1{font-size:19px}.tabs{margin-top:16px}.caption{display:block}.links{margin-top:13px}video{max-height:none;border-radius:8px}button{min-height:44px}}
+button{font-family:inherit;font-size:13px;font-weight:600;line-height:1.4}
+</style>
+</head>
+<body><main>
+<header><div><h1>NEXT K-CORE AI CONNECT · 헤더 시안</h1><p>같은 행사와 메시지를 두 가지 모션 언어로 비교합니다.</p></div><nav class="tabs" aria-label="헤더 시안 선택"><button type="button" aria-pressed="true" aria-controls="concept-a" data-choice="a">A · 대형 타이포</button><button type="button" aria-pressed="false" aria-controls="concept-b" data-choice="b">B · 형태와 공간</button></nav></header>
+<section id="concept-a" aria-label="A 대형 타이포"><video controls playsinline muted preload="metadata" poster="concept-a-type/poster.png" src="concept-a-type/preview.mp4" aria-label="A안 헤더 모션 영상"></video><div class="caption"><div><strong>A · 글자가 만드는 사람 사이</strong><p>큰 한글 타이포의 크기와 간격, 장면 전환으로 만남을 표현합니다.</p></div><div class="links"><a href="concept-a-type/header-a.html" target="_blank" rel="noopener">웹 헤더 열기 ↗</a><a href="concept-a-type/preview.mp4">영상 열기 ↗</a></div></div></section>
+<section id="concept-b" aria-label="B 형태와 공간" hidden><video controls playsinline muted preload="metadata" poster="concept-b-forms/poster.png" src="concept-b-forms/preview.mp4" aria-label="B안 헤더 모션 영상"></video><div class="caption"><div><strong>B · 함께할 자리가 열리다</strong><p>형태가 열리고 모이는 흐름으로 사람과 사람의 만남을 표현합니다.</p></div><div class="links"><a href="concept-b-forms/header-b.html" target="_blank" rel="noopener">웹 헤더 열기 ↗</a><a href="concept-b-forms/preview.mp4">영상 열기 ↗</a></div></div></section>
+<div class="review">헤더 시안 비교용입니다. 전체 본문은 원본 03번과 별도로 검수했습니다.<br><a href="review/01_초기검수_기준과전체구조.md">01번 비교 기준과 전체 구성 검수</a></div>
+</main><script>
+(()=>{const choices=[...document.querySelectorAll('[data-choice]')];choices.forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('video').forEach(video=>video.pause());choices.forEach(choice=>{const selected=choice===button;choice.setAttribute('aria-pressed',String(selected));document.getElementById('concept-'+choice.dataset.choice).hidden=!selected;});}));})();
+</script></body></html>

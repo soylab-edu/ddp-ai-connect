@@ -1,0 +1,1 @@
+Noto Serif KR variable font. Source copy: C:/Windows/Fonts/NotoSerifKR-VF.ttf. Noto fonts are distributed under the SIL Open Font License 1.1. Upstream project: https://github.com/notofonts/noto-cjk ; upstream license: https://github.com/notofonts/noto-cjk/blob/main/Serif/LICENSE

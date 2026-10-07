@@ -1,0 +1,56 @@
+/* Integrated page: black/deep-purple surfaces, coordinated with the motion header. */
+@font-face{font-family:PagePretendard;src:url('../reference-reset/motion/assets/Pretendard-Regular.woff2') format('woff2');font-weight:400;font-display:swap}
+@font-face{font-family:PagePretendard;src:url('../reference-reset/motion/assets/Pretendard-ExtraBold.woff2') format('woff2');font-weight:800;font-display:swap}
+html[data-theme="dark"]{
+ --bg:#09080e;--surface:#15111f;--surface-2:#1b1428;--ink:#ded8e8;--head:#f6f2fb;--muted:#b4acbf;
+ --hair:#30263e;--hair-2:#473753;--chip:#241a32;--media-bg:#0c0912;
+ --acc:#9856f1;--acc-deep:#7735cf;--acc-ink:#c099ff;--acc-tint:#25153d;--acc-line:#57367a;--neon:#ccff00;
+ --shadow:none;--r:12px;--f-body:PagePretendard,Pretendard,'Apple SD Gothic Neo','Malgun Gothic',sans-serif;
+ --f-disp:Outfit,PagePretendard,Pretendard,sans-serif;color-scheme:dark
+}
+body{background:var(--bg);color:var(--ink)}
+.topnav{background:#100c18;border-color:var(--hair);backdrop-filter:none;-webkit-backdrop-filter:none}
+.navlinks a{color:#b4acbf}.navlinks a:hover,.navlinks a.on{color:#f4edff;background:#27153d}
+.btn.pri{background:#8735df;color:#fff}.btn.pri:hover{background:#9e4dec}
+.drawer{background:#100c18}.routebar{background:#191124;border-color:var(--hair)}
+.chap{background:#09080e}.chap:nth-of-type(even){background:#100b19}
+.chap-h .desc,.purpose .body{color:#bbb3c7;font-size:15px;line-height:1.85}
+.chap-no,.lec .sn,.door .n,.goal b{color:#b084f5}
+.theme,.daycard,.gantt,.wk,.lec,.mode,.pv,.mx-wrap,.map,.zinfo,.gpanel .card,.visit .card,.door{border-radius:12px;box-shadow:none}
+.theme .art{background:#1b1428}.theme p{color:#b4acbf}
+.thumb.game{background:#281743;color:#c3a1ff}.thumb.art{background:#182e2c;color:#77d7c7}.thumb.story{background:#291c30;color:#ed9bc4}
+.work-placeholder{opacity:.85}
+.why3{grid-template-columns:repeat(2,minmax(0,1fr))}
+.why3>div,.notice,.scn>div,.faq details{border-radius:10px}
+.public-hours{background:#15111f}.public-hours strong{color:#c099ff}
+.seg button[aria-selected="true"],.seg button[aria-pressed="true"]{background:#35204c;color:#fff;box-shadow:none}
+.fgroup button[aria-pressed="true"],.ptab[aria-selected="true"]{background:#7440b0;border-color:#b184ed;color:#fff}
+.ptab[aria-selected="true"] .wm,.ptab[aria-selected="true"] span{color:#fff}
+.g-axis>#gAxis{grid-column:2;min-width:0}.g-axis>span{position:static;transform:none}
+.g-axis #gAxis>span{position:absolute}.g-axis{margin-top:8px}.g-axis div{color:#c6bfce}
+.g-bar.ev{background:#584365}.g-cut{border-left-color:#d2bfdc}
+.closing{background:#241238;color:#e7dfef;border:1px solid #4c2b63;border-radius:12px}
+.closing h3{color:#f6f2fb}.closing p{color:#c8bdd4;opacity:1}.closing .kick{color:#ccff00!important}
+.ft{background:#08060c}.ft .mark{color:#f6f2fb}
+.m-in>.m-x{background:#21162f;color:#fff;border-color:#59436f;box-shadow:none}
+:focus-visible{outline-color:#cfacff}
+@media(max-width:719px){.chap-h .desc,.purpose .body{font-size:15px}.why3{grid-template-columns:1fr}.navlinks a{font-size:13px}}
+/* Pending-content states: compact until actual titles/assets are published. */
+.filters[hidden]{display:none!important}
+.work-preview{padding:28px;border:1px solid var(--hair);border-radius:12px;background:var(--surface);display:grid;gap:10px;align-content:start}
+.preview-genre{font:600 11px/1.4 var(--f-disp);letter-spacing:.12em;color:#c099ff}
+.work-preview h4{font-size:27px}.work-preview p{font-size:14px;line-height:1.65;color:var(--muted)}
+.preview-status{font-size:12px;color:#a298b0;margin-top:12px}.work-preview.game{border-top:3px solid #9856f1}.work-preview.art{border-top:3px solid #00ae9e}.work-preview.story{border-top:3px solid #ff4c9d}
+.lecture-preview{background:var(--surface);border:1px solid var(--hair);border-radius:12px;padding:28px;display:grid;gap:20px}
+.lecture-preview h3{font-size:22px;margin-top:10px}.lecture-preview h3 strong{color:#c099ff;margin-left:8px}.lecture-preview p{font-size:14px;color:var(--muted)}
+.guide-entry{margin:0 0 20px}.guide-entry p{font-size:14px;color:var(--muted)}
+#gtabs{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));width:100%;max-width:600px;border-radius:10px;padding:5px;gap:5px}
+#gtabs button{border-radius:7px;min-height:44px}
+@media(max-width:719px){.work-preview,.lecture-preview{padding:22px}.pending-work-grid{grid-template-columns:1fr;gap:12px}.work-preview{grid-template-columns:1fr auto;gap:7px 15px}.work-preview .preview-genre{grid-column:1/-1}.work-preview h4{font-size:24px}.work-preview p{grid-column:1/-1}.work-preview .preview-status{grid-column:2;grid-row:2;margin:0;align-self:center}.pending-lecture-grid{grid-template-columns:1fr;gap:12px}.lecture-preview{gap:12px}}
+
+/* The day cards provide the full mobile schedule without a wide duplicate timeline. */
+@media(max-width:719px){.gantt{display:none}.chap>.wrap,.mx-wrap,.daycard{min-width:0;max-width:100%}}
+
+/* Primary application link and restored homepage link. */
+.topnav .nav-cta .ghost{display:inline-flex;align-items:center}
+@media(max-width:719px){.topnav .wrap{gap:6px;padding-inline:10px}.topnav .nav-cta{gap:5px}.topnav .nav-cta .btn{font-size:11px;padding:9px 8px}.topnav .brand{font-size:11px;gap:5px}.topnav .brand small{font-size:8px}}

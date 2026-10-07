@@ -1,0 +1,47 @@
+# .media · 44 assets
+
+id        type   dur   dims   path                                    description
+icon_001  icon   —     —      assets/open-peeps/peep-sitting-1.svg    peep sitting 1
+icon_002  icon   —     —      assets/open-peeps/peep-sitting-10.svg   peep sitting 10
+icon_003  icon   —     —      assets/open-peeps/peep-sitting-11.svg   peep sitting 11
+icon_004  icon   —     —      assets/open-peeps/peep-sitting-12.svg   peep sitting 12
+icon_005  icon   —     —      assets/open-peeps/peep-sitting-14.svg   peep sitting 14
+icon_006  icon   —     —      assets/open-peeps/peep-sitting-15.svg   peep sitting 15
+icon_007  icon   —     —      assets/open-peeps/peep-sitting-17.svg   peep sitting 17
+icon_008  icon   —     —      assets/open-peeps/peep-sitting-18.svg   peep sitting 18
+icon_009  icon   —     —      assets/open-peeps/peep-sitting-2.svg    peep sitting 2
+icon_010  icon   —     —      assets/open-peeps/peep-sitting-4.svg    peep sitting 4
+icon_011  icon   —     —      assets/open-peeps/peep-sitting-5.svg    peep sitting 5
+icon_012  icon   —     —      assets/open-peeps/peep-sitting-6.svg    peep sitting 6
+icon_013  icon   —     —      assets/open-peeps/peep-sitting-7.svg    peep sitting 7
+icon_014  icon   —     —      assets/open-peeps/peep-sitting-9.svg    peep sitting 9
+icon_015  icon   —     —      assets/open-peeps/peep-standing-1.svg   peep standing 1
+icon_016  icon   —     —      assets/open-peeps/peep-standing-10.svg  peep standing 10
+icon_017  icon   —     —      assets/open-peeps/peep-standing-11.svg  peep standing 11
+icon_018  icon   —     —      assets/open-peeps/peep-standing-12.svg  peep standing 12
+icon_019  icon   —     —      assets/open-peeps/peep-standing-13.svg  peep standing 13
+icon_020  icon   —     —      assets/open-peeps/peep-standing-14.svg  peep standing 14
+icon_021  icon   —     —      assets/open-peeps/peep-standing-15.svg  peep standing 15
+icon_022  icon   —     —      assets/open-peeps/peep-standing-16.svg  peep standing 16
+icon_023  icon   —     —      assets/open-peeps/peep-standing-17.svg  peep standing 17
+icon_024  icon   —     —      assets/open-peeps/peep-standing-18.svg  peep standing 18
+icon_025  icon   —     —      assets/open-peeps/peep-standing-19.svg  peep standing 19
+icon_026  icon   —     —      assets/open-peeps/peep-standing-2.svg   peep standing 2
+icon_027  icon   —     —      assets/open-peeps/peep-standing-20.svg  peep standing 20
+icon_028  icon   —     —      assets/open-peeps/peep-standing-21.svg  peep standing 21
+icon_029  icon   —     —      assets/open-peeps/peep-standing-22.svg  peep standing 22
+icon_030  icon   —     —      assets/open-peeps/peep-standing-23.svg  peep standing 23
+icon_031  icon   —     —      assets/open-peeps/peep-standing-24.svg  peep standing 24
+icon_032  icon   —     —      assets/open-peeps/peep-standing-25.svg  peep standing 25
+icon_033  icon   —     —      assets/open-peeps/peep-standing-26.svg  peep standing 26
+icon_034  icon   —     —      assets/open-peeps/peep-standing-27.svg  peep standing 27
+icon_035  icon   —     —      assets/open-peeps/peep-standing-28.svg  peep standing 28
+icon_036  icon   —     —      assets/open-peeps/peep-standing-29.svg  peep standing 29
+icon_037  icon   —     —      assets/open-peeps/peep-standing-3.svg   peep standing 3
+icon_038  icon   —     —      assets/open-peeps/peep-standing-30.svg  peep standing 30
+icon_039  icon   —     —      assets/open-peeps/peep-standing-4.svg   peep standing 4
+icon_040  icon   —     —      assets/open-peeps/peep-standing-5.svg   peep standing 5
+icon_041  icon   —     —      assets/open-peeps/peep-standing-6.svg   peep standing 6
+icon_042  icon   —     —      assets/open-peeps/peep-standing-7.svg   peep standing 7
+icon_043  icon   —     —      assets/open-peeps/peep-standing-8.svg   peep standing 8
+icon_044  icon   —     —      assets/open-peeps/peep-standing-9.svg   peep standing 9

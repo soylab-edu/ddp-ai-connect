@@ -1,0 +1,1 @@
+{"name":"wave-eight-work","private":true,"scripts":{"check":"npx --yes hyperframes@0.8.139 check","render":"npx --yes hyperframes@0.8.139 render"}}

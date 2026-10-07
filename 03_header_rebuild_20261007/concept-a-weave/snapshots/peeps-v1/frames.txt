@@ -1,0 +1,6 @@
+file 'frame-00-at-1.6s.png'
+file 'frame-01-at-3.8s.png'
+file 'frame-02-at-6.1s.png'
+file 'frame-03-at-8.4s.png'
+file 'frame-04-at-10.9s.png'
+file 'frame-05-at-14.5s.png'

@@ -1,0 +1,20 @@
+{
+  "duration": 14,
+  "assertions": [
+    {"kind":"appearsBy","selector":".event","bySec":0},
+    {"kind":"appearsBy","selector":".wordmark","bySec":0},
+    {"kind":"appearsBy","selector":".date","bySec":0},
+    {"kind":"appearsBy","selector":".venue","bySec":0},
+    {"kind":"appearsBy","selector":".actions","bySec":0},
+    {"kind":"appearsBy","selector":".person-a","bySec":1.5},
+    {"kind":"appearsBy","selector":".genres","bySec":4.3},
+    {"kind":"appearsBy","selector":".together","bySec":7.5},
+    {"kind":"appearsBy","selector":".final-copy","bySec":11.5},
+    {"kind":"before","a":".person-a","b":".genres"},
+    {"kind":"before","a":".genres","b":".together"},
+    {"kind":"before","a":".together","b":".final-copy"},
+    {"kind":"staysInFrame","selector":".mast"},
+    {"kind":"staysInFrame","selector":".foot"},
+    {"kind":"keepsMoving","withinSelector":"#forms","maxStaticSec":3.5}
+  ]
+}

@@ -1,0 +1,1 @@
+(()=>{const q=new URLSearchParams(location.search);const frame=document.getElementById('headerFrame');if(q.get('header')==='b') frame.src='concept-b-playground/header-b.html';if(q.has('bodyOnly')) document.querySelector('.rebuild-cover').hidden=true;})();

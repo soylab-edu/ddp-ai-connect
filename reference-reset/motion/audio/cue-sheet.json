@@ -1,0 +1,144 @@
+{
+  "duration": 16,
+  "sampleRate": 48000,
+  "channels": 2,
+  "premasterPeak": 0.6921777967502054,
+  "bed": {
+    "title": "Magnetic particles",
+    "author": "lovescotch",
+    "sourceBpmMeasured": 120,
+    "sections": [
+      {
+        "start": 0,
+        "end": 11.2,
+        "bpm": 150,
+        "sourceStart": 0,
+        "pitchPreservingTempo": 1.25
+      },
+      {
+        "start": 11.2,
+        "end": 16,
+        "bpm": 120,
+        "sourceStart": 4,
+        "pitchPreservingTempo": 1
+      }
+    ]
+  },
+  "cues": [
+    {
+      "time": 0.82,
+      "end": 1.4,
+      "frame": 25,
+      "label": "Dot spread into date",
+      "type": "recorded whoosh retime",
+      "gain": 0.21
+    },
+    {
+      "time": 1.4,
+      "frame": 42,
+      "label": "12 / date",
+      "type": "recorded kick accent",
+      "gain": 0.27
+    },
+    {
+      "time": 2.7,
+      "frame": 81,
+      "label": "People message",
+      "type": "recorded kick accent",
+      "gain": 0.2
+    },
+    {
+      "time": 5.03,
+      "end": 5.28,
+      "frame": 151,
+      "label": "Diagonal wave entry",
+      "type": "recorded whoosh retime",
+      "gain": 0.105
+    },
+    {
+      "time": 5.2,
+      "frame": 156,
+      "label": "Text wave",
+      "type": "recorded kick accent",
+      "gain": 0.27
+    },
+    {
+      "time": 7.12,
+      "end": 7.48,
+      "frame": 214,
+      "label": "SOYLAB reveal",
+      "type": "recorded whoosh retime",
+      "gain": 0.13
+    },
+    {
+      "time": 7.3,
+      "frame": 219,
+      "label": "SOYLAB",
+      "type": "recorded kick accent",
+      "gain": 0.25
+    },
+    {
+      "time": 8.8,
+      "frame": 264,
+      "label": "AI CONNECT.",
+      "type": "recorded kick accent",
+      "gain": 0.24
+    },
+    {
+      "time": 9.2,
+      "frame": 276,
+      "label": "DDP.",
+      "type": "recorded kick accent",
+      "gain": 0.2
+    },
+    {
+      "time": 9.6,
+      "frame": 288,
+      "label": "AI.",
+      "type": "recorded kick accent",
+      "gain": 0.24
+    },
+    {
+      "time": 10.0,
+      "frame": 300,
+      "label": "SOYLAB.",
+      "type": "recorded kick accent",
+      "gain": 0.2
+    },
+    {
+      "time": 10.4,
+      "frame": 312,
+      "label": "CREATORS.",
+      "type": "recorded kick accent",
+      "gain": 0.24
+    },
+    {
+      "time": 10.8,
+      "frame": 324,
+      "label": "ONE.",
+      "type": "recorded kick accent",
+      "gain": 0.2
+    },
+    {
+      "time": 11.2,
+      "frame": 336,
+      "label": "Final 12",
+      "type": "recorded kick accent",
+      "gain": 0.31
+    },
+    {
+      "time": 11.7,
+      "frame": 351,
+      "label": "Final DEC",
+      "type": "recorded kick accent",
+      "gain": 0.22
+    },
+    {
+      "time": 12.2,
+      "frame": 366,
+      "label": "Final AI CONNECT.",
+      "type": "recorded kick accent",
+      "gain": 0.34
+    }
+  ]
+}

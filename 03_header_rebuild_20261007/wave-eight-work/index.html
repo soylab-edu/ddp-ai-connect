@@ -1,0 +1,5 @@
+<!doctype html>
+<html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>C · 8줄 텍스트 웨이브</title><link rel="stylesheet" href="wave.css"><script src="assets/gsap.min.js"></script><style>*{box-sizing:border-box}html,body{width:100%;height:100%;margin:0;background:#111}#wave8{position:relative;width:100%;height:100%;overflow:clip}#wave-host{position:absolute;inset:0}</style></head>
+<body><main id="wave8" data-composition-id="wave8" data-start="0" data-duration="2.9" data-width="1600" data-height="640"><div id="wave-host" class="clip" data-start="0" data-duration="2.9" data-track-index="0"></div></main><script src="wave.js"></script><script>
+document.fonts.ready.then(()=>{CWave.mount(document.getElementById('wave-host'));CWave.resize(1600,640);const state={t:10.6};const timeline=gsap.timeline({paused:true,onUpdate:()=>CWave.seek(state.t)});timeline.to(state,{t:13.5,duration:2.9,ease:'none'});CWave.seek(10.6);window.__timelines=window.__timelines||{};window.__timelines.wave8=timeline;});
+</script></body></html>
