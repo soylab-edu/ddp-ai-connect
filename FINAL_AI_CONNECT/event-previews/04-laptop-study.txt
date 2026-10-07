@@ -1,0 +1,10 @@
+Use case: photorealistic-natural. Asset type: DDP AI event concept photograph, single landscape 16:9 photograph. Use the provided reference as the architectural background; faithfully preserve the recognizable yellow stepped seating, sculptural ivory curved side wall, large patterned metal-screen windows, high curved ceiling and grey stone floor. Camera closer to the lower yellow steps at seated eye level, medium-wide candid shot, with four Korean adult event participants in casual modern clothing clearly reading and studying on laptops. Main pair on lower steps: woman actively typing on laptop on her lap, man nearby comparing a printed event leaflet with an AI learning exercise on his laptop. Two others slightly behind are discussing a laptop screen while one points gently. A few visitors studying at the existing narrow window counter in the distance. Show natural attentive faces and believable hands, laptops supported on laps, relaxed real posture; no staged gaze at camera. Soft window daylight, photorealistic editorial event photography with lifelike material detail. Keep the place recognizable without excessive empty floor or ceiling. Screens should imply AI learning using simple interface and image thumbnails without prominent text. No new room, no generic library, no furniture redesign, no infographic, no collage, no watermark.
+
+Targeted correction prompt:
+undefined
+
+Generated using built-in image_gen. Background reference: D:/DDP/행사내부/02_계단_커피_노트북.png
+
+Second targeted correction prompt:
+undefined
+
